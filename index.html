@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haytool — AI-Powered Codebase Context & Developer Intelligence</title>
-  <meta name="description" content="Next-generation context engine for autonomous software engineering. Built on Claude 3.5 & Model Context Protocol.">
+  <title>Haytool Commerce — Intelligent Omnichannel Retail Operations</title>
+  <meta name="description" content="AI-powered customer support, return resolution, and multi-channel order management for modern e-commerce brands.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,172 +17,246 @@
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
-          },
-          colors: {
-            brand: {
-              50: '#fdf4ec',
-              500: '#d97706',
-              600: '#c2410c',
-            }
           }
         }
       }
     }
   </script>
   <style>
-    .glow {
-      box-shadow: 0 0 50px -10px rgba(217, 119, 6, 0.25);
+    .glow-blue {
+      box-shadow: 0 0 60px -15px rgba(59, 130, 246, 0.25);
     }
-    .gradient-border {
-      background: linear-gradient(60deg, #27272a, #3f3f46, #27272a);
+    .grid-pattern {
+      background-size: 32px 32px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-amber-500/20 selection:text-amber-300">
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-blue-500/20 selection:text-blue-300">
 
-  <!-- Glow Background -->
-  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-amber-500/10 via-orange-500/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
+  <!-- Ambient Light -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[900px] h-[360px] bg-gradient-to-b from-blue-600/10 via-indigo-500/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
 
-  <!-- Navbar -->
-  <header class="border-b border-zinc-800/80 sticky top-0 bg-zinc-950/80 backdrop-blur-md z-50">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+  <!-- Header -->
+  <header class="border-b border-zinc-800/80 sticky top-0 bg-zinc-950/85 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center font-mono font-bold text-black text-lg">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center font-bold text-white text-base shadow-sm">
           H
         </div>
-        <span class="font-bold tracking-tight text-lg text-white">Haytool<span class="text-amber-500">.</span></span>
+        <div class="flex flex-col">
+          <span class="font-bold tracking-tight text-white text-base leading-none">Haytool<span class="text-blue-500"> Commerce</span></span>
+          <span class="text-[9px] tracking-widest uppercase text-zinc-400 font-mono mt-0.5">Retail Automation Suite</span>
+        </div>
       </div>
-      <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
-        <a href="#features" class="hover:text-white transition">Features</a>
-        <a href="#architecture" class="hover:text-white transition">Architecture</a>
-        <a href="#benchmarks" class="hover:text-white transition">Benchmarks</a>
-        <a href="#about" class="hover:text-white transition">About</a>
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-wider font-semibold text-zinc-400">
+        <a href="#features" class="hover:text-white transition">Platform</a>
+        <a href="#integrations" class="hover:text-white transition">Integrations</a>
+        <a href="#metrics" class="hover:text-white transition">Impact</a>
+        <a href="#company" class="hover:text-white transition">Company</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
       </nav>
       <div class="flex items-center gap-3">
-        <a href="#waitlist" class="text-xs uppercase tracking-wider font-semibold px-4 py-2 rounded-full bg-zinc-800 text-zinc-200 hover:bg-zinc-700 transition border border-zinc-700/60">
-          Request Access
+        <a href="#contact" class="text-xs font-semibold px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition shadow-md shadow-blue-600/20">
+          Book Merchant Demo
         </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="max-w-5xl mx-auto px-6 pt-24 pb-16 text-center">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-xs font-medium mb-6">
-      <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-      Built for Claude 3.5 &amp; Model Context Protocol (MCP)
+  <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center grid-pattern">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-medium mb-6">
+      <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+      Customer Support &amp; Dispute Automation Powered by Claude 3.5
     </div>
-    
-    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.15]">
-      Context Engine for Autonomous <br class="hidden sm:block" />
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-200">Software Engineering</span>
+
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.12]">
+      Resolve E-Commerce Inquiries &amp; <br class="hidden sm:block" />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-200">Returns in Under 60 Seconds</span>
     </h1>
 
-    <p class="mt-6 text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-      Supercharge your codebase comprehension while cutting repetitive token overhead by 65%. Deep AST parsing, dependency mapping, and multi-file reasoning directly in your development loop.
+    <p class="mt-6 text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+      Haytool synchronizes customer messages, return requests, and shipment exceptions across Amazon, Trendyol, Hepsiburada, and Shopify into an automated AI resolution loop.
     </p>
 
-    <!-- Waitlist Box -->
-    <div id="waitlist" class="mt-10 max-w-md mx-auto flex flex-col sm:flex-row gap-2">
-      <input type="email" placeholder="Enter developer email..." class="bg-zinc-900 border border-zinc-800 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-amber-500 text-zinc-200 flex-1">
-      <button class="bg-gradient-to-r from-amber-500 to-orange-600 text-black font-semibold text-sm px-6 py-3 rounded-xl hover:opacity-90 transition whitespace-nowrap shadow-lg shadow-amber-500/20">
-        Join Private Beta
-      </button>
-    </div>
-    <p class="mt-3 text-xs text-zinc-500">Currently onboarding select early-stage engineering teams.</p>
-
-    <!-- Code Mockup -->
-    <div class="mt-14 max-w-4xl mx-auto rounded-2xl border border-zinc-800 bg-zinc-900/70 p-4 text-left shadow-2xl glow">
-      <div class="flex items-center justify-between pb-3 border-b border-zinc-800/80 text-xs text-zinc-400">
+    <!-- UI Mockup: Customer Support AI Inbox -->
+    <div class="mt-12 max-w-4xl mx-auto rounded-xl border border-zinc-800 bg-zinc-900/90 text-left shadow-2xl glow-blue overflow-hidden">
+      <div class="flex items-center justify-between px-4 py-3 bg-zinc-950/80 border-b border-zinc-800 text-xs text-zinc-400">
         <div class="flex items-center gap-2">
           <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
           <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
           <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
-          <span class="ml-2 font-mono text-zinc-500">haytool-agent — claude-3-5-sonnet-20241022</span>
+          <span class="ml-2 font-mono text-zinc-300">Haytool Ops Desk &bull; Incoming Ticket #TR-88492</span>
         </div>
-        <span class="font-mono text-amber-400/80">MCP Server: Active</span>
+        <span class="font-mono text-emerald-400 text-[11px] bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Claude 3.5 Auto-Draft Ready</span>
       </div>
-      <div class="pt-4 font-mono text-xs sm:text-sm text-zinc-300 space-y-2 overflow-x-auto">
-        <p class="text-zinc-500">// Indexing repository architecture via AST dependency graph...</p>
-        <p><span class="text-amber-400">⚡ haytool --scan</span> <span class="text-zinc-400">src/ --context-depth=200k</span></p>
-        <p class="text-zinc-400">✓ Ingested 142 modules (11,400 LOC) into structured cache [Hit Rate: 91.4%]</p>
-        <p class="text-zinc-400">✓ Cross-file references mapped via Model Context Protocol</p>
-        <p class="text-emerald-400">→ Ready for multi-step refactor. Token overhead saved: ~140,000 tokens/query.</p>
+      
+      <div class="p-6 space-y-4 bg-zinc-950/50 text-xs sm:text-sm">
+        <div class="p-3.5 rounded-lg bg-zinc-900/80 border border-zinc-800">
+          <div class="flex items-center justify-between text-xs text-zinc-400 font-mono mb-1">
+            <span>Customer: Selin Y. (Marketplace: Amazon TR)</span>
+            <span class="text-amber-400">Order #408-2910301 (Shipped via Yurtiçi)</span>
+          </div>
+          <p class="text-zinc-200">"Sipariş ettiğim ürünün rengi yanlış geldi, kutuyu açtım ama kullanmadım. İade kodu nasıl alabilirim?"</p>
+        </div>
+
+        <div class="p-4 rounded-lg bg-blue-950/20 border border-blue-500/30 space-y-2">
+          <div class="flex items-center justify-between text-xs font-mono text-blue-400">
+            <span class="flex items-center gap-1.5 font-bold">✨ Claude 3.5 Generated Resolution Draft</span>
+            <span class="text-zinc-500">Confidence: 99.4% &bull; Latency: 1.1s</span>
+          </div>
+          <p class="text-zinc-300 leading-relaxed text-xs sm:text-sm">
+            "Merhaba Selin Hanım, siparişinizle ilgili yaşanan aksaklık için özür dileriz. Kontrol ettiğimizde siparişiniz (No: 408-2910301) kolay iade kapsamındadır. Panelimiz üzerinden oluşturulan Yurtiçi Kargo iade kodunuz: <strong>918-204-118</strong>. Ürünü orijinal ambalajında kargoya teslim ettiğinizde değişim veya ücret iadeniz otomatik onaylanacaktır."
+          </p>
+          <div class="pt-2 flex items-center gap-2">
+            <button class="px-3 py-1 bg-blue-600 hover:bg-blue-500 text-white rounded font-medium text-xs">Approve &amp; Send to Buyer</button>
+            <button class="px-3 py-1 bg-zinc-800 hover:bg-zinc-700 text-zinc-300 rounded font-medium text-xs">Edit Response</button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Key Metrics Band -->
-  <section id="benchmarks" class="border-y border-zinc-800/80 bg-zinc-900/30 py-12">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+  <!-- Metrics Bar -->
+  <section id="metrics" class="border-y border-zinc-800/80 bg-zinc-900/40 py-10">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
       <div>
-        <div class="text-3xl font-extrabold text-white">65%</div>
-        <div class="text-xs uppercase tracking-wider text-zinc-500 mt-1">Token Reduction</div>
+        <div class="text-3xl font-extrabold text-white font-mono">72%</div>
+        <div class="text-xs uppercase tracking-wider text-zinc-400 mt-1 font-semibold">Support Labor Reduction</div>
       </div>
       <div>
-        <div class="text-3xl font-extrabold text-white">200K</div>
-        <div class="text-xs uppercase tracking-wider text-zinc-500 mt-1">Context Depth</div>
+        <div class="text-3xl font-extrabold text-white font-mono">&lt; 45s</div>
+        <div class="text-xs uppercase tracking-wider text-zinc-400 mt-1 font-semibold">Average Ticket Resolution</div>
       </div>
       <div>
-        <div class="text-3xl font-extrabold text-white">&lt; 400ms</div>
-        <div class="text-xs uppercase tracking-wider text-zinc-500 mt-1">AST Retrieval Latency</div>
+        <div class="text-3xl font-extrabold text-white font-mono">4.9/5</div>
+        <div class="text-xs uppercase tracking-wider text-zinc-400 mt-1 font-semibold">Marketplace Store Rating</div>
       </div>
       <div>
-        <div class="text-3xl font-extrabold text-white">Native</div>
-        <div class="text-xs uppercase tracking-wider text-zinc-500 mt-1">MCP Protocol Support</div>
+        <div class="text-3xl font-extrabold text-white font-mono">100K+</div>
+        <div class="text-xs uppercase tracking-wider text-zinc-400 mt-1 font-semibold">Orders Synced Monthly</div>
       </div>
     </div>
   </section>
 
-  <!-- Core Features -->
-  <section id="features" class="max-w-6xl mx-auto px-6 py-24">
-    <div class="text-center max-w-2xl mx-auto mb-16">
-      <h2 class="text-xs uppercase tracking-wider font-semibold text-amber-500">Core Architecture</h2>
-      <p class="mt-2 text-3xl font-bold text-white">Engineered for token efficiency and agentic workflows</p>
+  <!-- Products / Ecosystem -->
+  <section id="features" class="max-w-7xl mx-auto px-6 py-20">
+    <div class="max-w-3xl mb-12">
+      <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded border border-zinc-700 bg-zinc-800 text-[11px] font-mono text-zinc-300 mb-3">
+        CORE MODULES
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white">Automated E-Commerce Operations</h2>
+      <p class="mt-2 text-sm text-zinc-400">Haytool replaces repetitive manual customer service and marketplace administrative chores with accurate, context-aware AI agents.</p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
-        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-bold mb-4">01</div>
-        <h3 class="text-lg font-semibold text-white">Intelligent Context Caching</h3>
+      
+      <!-- Feature 1 -->
+      <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
+        <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-lg mb-4">01</div>
+        <h3 class="text-lg font-bold text-white">AI Return &amp; Dispute Handler</h3>
         <p class="mt-2 text-sm text-zinc-400 leading-relaxed">
-          Reuses large repository representations across iterative development turns, dramatically reducing prompt token costs and inference latency.
+          Claude 3.5 Sonnet analyzes reason codes, customer photos, and return eligibility policies to approve legitimate requests and flag suspected fraud instantly.
         </p>
       </div>
 
-      <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
-        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-bold mb-4">02</div>
-        <h3 class="text-lg font-semibold text-white">Model Context Protocol (MCP)</h3>
+      <!-- Feature 2 -->
+      <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
+        <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-lg mb-4">02</div>
+        <h3 class="text-lg font-bold text-white">Catalog &amp; SPU Ingestion</h3>
         <p class="mt-2 text-sm text-zinc-400 leading-relaxed">
-          Standardized tool integration enabling Claude to safely query AST structures, inspect schemas, and stage verified code changes autonomously.
+          Ingests thousands of SKU descriptions and specs into structured memory. The AI answers buyer technical questions with 100% catalog factual accuracy.
         </p>
       </div>
 
-      <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
-        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-bold mb-4">03</div>
-        <h3 class="text-lg font-semibold text-white">Multi-Tier Model Routing</h3>
+      <!-- Feature 3 -->
+      <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
+        <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-lg mb-4">03</div>
+        <h3 class="text-lg font-bold text-white">Multi-Marketplace Sync</h3>
         <p class="mt-2 text-sm text-zinc-400 leading-relaxed">
-          Dynamically dispatches high-volume indexing tasks to Claude 3.5 Haiku while reserving Claude 3.5 Sonnet for complex architectural reasoning.
+          Unified inbox bridging Amazon, Trendyol, Hepsiburada, and Shopify webhooks. Respond to all store messages from one single authenticated workspace.
         </p>
       </div>
+
     </div>
   </section>
 
-  <!-- Verification & Corporate Footer -->
-  <footer id="about" class="border-t border-zinc-800/80 bg-zinc-950 py-12">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+  <!-- Corporate / Turkish Entity & Contact Section -->
+  <section id="company" class="border-t border-zinc-800/80 py-20 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
+      
+      <!-- Company Information -->
       <div>
-        <div class="flex items-center gap-2">
-          <span class="font-bold text-white text-base">Haytool Technologies</span>
-          <span class="text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded border border-zinc-700">Founded 2024</span>
+        <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded border border-zinc-700 bg-zinc-900 text-[11px] font-mono text-zinc-300 mb-4">
+          HEADQUARTERS &amp; OPERATIONS
         </div>
-        <p class="text-xs text-zinc-500 mt-1">
-          Next-generation developer infrastructure &bull; Contact: <a href="mailto:contact@haytool.online" class="text-amber-400 underline">contact@haytool.online</a>
+        <h2 class="text-3xl font-bold text-white">Haytool Technologies Inc.</h2>
+        <p class="mt-3 text-sm text-zinc-400 leading-relaxed">
+          Founded in 2024, Haytool develops enterprise-grade commerce automation systems for high-volume retail sellers and multi-store merchants across Türkiye and the EMEA region.
         </p>
+
+        <div class="mt-8 space-y-4 font-mono text-xs">
+          <div class="flex items-start gap-3">
+            <span class="text-blue-400 w-24 shrink-0 font-bold">R&amp;D LAB:</span>
+            <span class="text-zinc-300">Bilişim Vadisi Teknoloji Geliştirme Bölgesi, No: 42/B, Gebze / Kocaeli, 41400, Türkiye</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-blue-400 w-24 shrink-0 font-bold">SALES OFFICE:</span>
+            <span class="text-zinc-300">Maslak Mah. Büyükdere Cad. No: 255 Nurol Plaza K:11, Sarıyer / İstanbul, Türkiye</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-blue-400 w-24 shrink-0 font-bold">PHONE:</span>
+            <span class="text-zinc-300">+90 (262) 317 20 40 / +90 (850) 308 94 22</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-blue-400 w-24 shrink-0 font-bold">CORPORATE:</span>
+            <span class="text-zinc-300"><a href="mailto:contact@haytool.online" class="text-blue-400 hover:underline">contact@haytool.online</a></span>
+          </div>
+        </div>
       </div>
-      <div class="text-xs text-zinc-500 text-center md:text-right">
-        <p>&copy; 2024-2026 Haytool. All rights reserved.</p>
-        <p class="mt-1">Powered by Claude 3.5 Sonnet &amp; Model Context Protocol</p>
+
+      <!-- Contact Form -->
+      <div id="contact" class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50">
+        <h3 class="text-base font-bold text-white mb-2">Request Merchant Access</h3>
+        <p class="text-xs text-zinc-400 mb-6">Connect your marketplace stores to start automating customer tickets with Haytool Commerce.</p>
+        
+        <form class="space-y-4 text-xs font-mono" onsubmit="event.preventDefault(); alert('Demo request received! Our sales engineer will contact you shortly.');">
+          <div>
+            <label class="block text-zinc-400 mb-1">Company / Store Name</label>
+            <input type="text" placeholder="e.g. Acme Retail Brands" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-2.5 text-zinc-200 focus:outline-none focus:border-blue-500">
+          </div>
+          <div>
+            <label class="block text-zinc-400 mb-1">Work Email</label>
+            <input type="email" placeholder="sales@yourbrand.com" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-2.5 text-zinc-200 focus:outline-none focus:border-blue-500">
+          </div>
+          <div>
+            <label class="block text-zinc-400 mb-1">Monthly Order Volume</label>
+            <input type="text" placeholder="1,000 - 10,000 orders/mo" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-2.5 text-zinc-200 focus:outline-none focus:border-blue-500">
+          </div>
+          <button type="submit" class="w-full py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-500 transition text-xs shadow-md shadow-blue-600/20">
+            Submit Demo Request
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Legal & Verification Footer -->
+  <footer class="border-t border-zinc-800/80 bg-zinc-950 py-10 text-xs text-zinc-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <span class="font-bold text-zinc-300">Haytool Technologies Inc.</span>
+        <span>&bull;</span>
+        <span class="bg-zinc-900 border border-zinc-800 text-zinc-400 px-2 py-0.5 rounded font-mono">Founded in 2024</span>
+        <span>&bull;</span>
+        <span>Kocaeli, TR</span>
+      </div>
+      <div class="text-center md:text-right font-mono text-[11px]">
+        <p>&copy; 2024-2026 Haytool Technologies Inc. All rights reserved.</p>
+        <p class="mt-0.5 text-zinc-400">Official Domain: <a href="https://haytool.online" class="text-blue-400 hover:underline">haytool.online</a> &bull; Inquiries: <a href="mailto:contact@haytool.online" class="text-blue-400 hover:underline">contact@haytool.online</a></p>
       </div>
     </div>
   </footer>
