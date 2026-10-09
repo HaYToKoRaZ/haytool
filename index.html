@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haytool — AI-Powered Codebase Context & Developer Intelligence</title>
+  <meta name="description" content="Next-generation context engine for autonomous software engineering. Built on Claude 3.5 & Model Context Protocol.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#fdf4ec',
+              500: '#d97706',
+              600: '#c2410c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glow {
+      box-shadow: 0 0 50px -10px rgba(217, 119, 6, 0.25);
+    }
+    .gradient-border {
+      background: linear-gradient(60deg, #27272a, #3f3f46, #27272a);
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-amber-500/20 selection:text-amber-300">
+
+  <!-- Glow Background -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-to-b from-amber-500/10 via-orange-500/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- Navbar -->
+  <header class="border-b border-zinc-800/80 sticky top-0 bg-zinc-950/80 backdrop-blur-md z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center font-mono font-bold text-black text-lg">
+          H
+        </div>
+        <span class="font-bold tracking-tight text-lg text-white">Haytool<span class="text-amber-500">.</span></span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
+        <a href="#features" class="hover:text-white transition">Features</a>
+        <a href="#architecture" class="hover:text-white transition">Architecture</a>
+        <a href="#benchmarks" class="hover:text-white transition">Benchmarks</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#waitlist" class="text-xs uppercase tracking-wider font-semibold px-4 py-2 rounded-full bg-zinc-800 text-zinc-200 hover:bg-zinc-700 transition border border-zinc-700/60">
+          Request Access
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-5xl mx-auto px-6 pt-24 pb-16 text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-300 text-xs font-medium mb-6">
+      <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+      Built for Claude 3.5 &amp; Model Context Protocol (MCP)
+    </div>
+    
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.15]">
+      Context Engine for Autonomous <br class="hidden sm:block" />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-200">Software Engineering</span>
+    </h1>
+
+    <p class="mt-6 text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+      Supercharge your codebase comprehension while cutting repetitive token overhead by 65%. Deep AST parsing, dependency mapping, and multi-file reasoning directly in your development loop.
+    </p>
+
+    <!-- Waitlist Box -->
+    <div id="waitlist" class="mt-10 max-w-md mx-auto flex flex-col sm:flex-row gap-2">
+      <input type="email" placeholder="Enter developer email..." class="bg-zinc-900 border border-zinc-800 px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-amber-500 text-zinc-200 flex-1">
+      <button class="bg-gradient-to-r from-amber-500 to-orange-600 text-black font-semibold text-sm px-6 py-3 rounded-xl hover:opacity-90 transition whitespace-nowrap shadow-lg shadow-amber-500/20">
+        Join Private Beta
+      </button>
+    </div>
+    <p class="mt-3 text-xs text-zinc-500">Currently onboarding select early-stage engineering teams.</p>
+
+    <!-- Code Mockup -->
+    <div class="mt-14 max-w-4xl mx-auto rounded-2xl border border-zinc-800 bg-zinc-900/70 p-4 text-left shadow-2xl glow">
+      <div class="flex items-center justify-between pb-3 border-b border-zinc-800/80 text-xs text-zinc-400">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
+          <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
+          <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
+          <span class="ml-2 font-mono text-zinc-500">haytool-agent — claude-3-5-sonnet-20241022</span>
+        </div>
+        <span class="font-mono text-amber-400/80">MCP Server: Active</span>
+      </div>
+      <div class="pt-4 font-mono text-xs sm:text-sm text-zinc-300 space-y-2 overflow-x-auto">
+        <p class="text-zinc-500">// Indexing repository architecture via AST dependency graph...</p>
+        <p><span class="text-amber-400">⚡ haytool --scan</span> <span class="text-zinc-400">src/ --context-depth=200k</span></p>
+        <p class="text-zinc-400">✓ Ingested 142 modules (11,400 LOC) into structured cache [Hit Rate: 91.4%]</p>
+        <p class="text-zinc-400">✓ Cross-file references mapped via Model Context Protocol</p>
+        <p class="text-emerald-400">→ Ready for multi-step refactor. Token overhead saved: ~140,000 tokens/query.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics Band -->
+  <section id="benchmarks" class="border-y border-zinc-800/80 bg-zinc-900/30 py-12">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-3xl font-extrabold text-white">65%</div>
+        <div class="text-xs uppercase tracking-wider text-zinc-500 mt-1">Token Reduction</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold text-white">200K</div>
+        <div class="text-xs uppercase tracking-wider text-zinc-500 mt-1">Context Depth</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold text-white">&lt; 400ms</div>
+        <div class="text-xs uppercase tracking-wider text-zinc-500 mt-1">AST Retrieval Latency</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold text-white">Native</div>
+        <div class="text-xs uppercase tracking-wider text-zinc-500 mt-1">MCP Protocol Support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features -->
+  <section id="features" class="max-w-6xl mx-auto px-6 py-24">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs uppercase tracking-wider font-semibold text-amber-500">Core Architecture</h2>
+      <p class="mt-2 text-3xl font-bold text-white">Engineered for token efficiency and agentic workflows</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-bold mb-4">01</div>
+        <h3 class="text-lg font-semibold text-white">Intelligent Context Caching</h3>
+        <p class="mt-2 text-sm text-zinc-400 leading-relaxed">
+          Reuses large repository representations across iterative development turns, dramatically reducing prompt token costs and inference latency.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-bold mb-4">02</div>
+        <h3 class="text-lg font-semibold text-white">Model Context Protocol (MCP)</h3>
+        <p class="mt-2 text-sm text-zinc-400 leading-relaxed">
+          Standardized tool integration enabling Claude to safely query AST structures, inspect schemas, and stage verified code changes autonomously.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center font-mono font-bold mb-4">03</div>
+        <h3 class="text-lg font-semibold text-white">Multi-Tier Model Routing</h3>
+        <p class="mt-2 text-sm text-zinc-400 leading-relaxed">
+          Dynamically dispatches high-volume indexing tasks to Claude 3.5 Haiku while reserving Claude 3.5 Sonnet for complex architectural reasoning.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verification & Corporate Footer -->
+  <footer id="about" class="border-t border-zinc-800/80 bg-zinc-950 py-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-white text-base">Haytool Technologies</span>
+          <span class="text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded border border-zinc-700">Founded 2024</span>
+        </div>
+        <p class="text-xs text-zinc-500 mt-1">
+          Next-generation developer infrastructure &bull; Contact: <a href="mailto:contact@haytool.online" class="text-amber-400 underline">contact@haytool.online</a>
+        </p>
+      </div>
+      <div class="text-xs text-zinc-500 text-center md:text-right">
+        <p>&copy; 2024-2026 Haytool. All rights reserved.</p>
+        <p class="mt-1">Powered by Claude 3.5 Sonnet &amp; Model Context Protocol</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
