@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary Meta Tags -->
-  <title>Haytool Commerce | Autonomous Omnichannel Retail Operations & AI Engine</title>
+  <title id="meta-title">Haytool Commerce | Autonomous Omnichannel Retail Operations & AI Engine</title>
   <meta name="title" content="Haytool Commerce | Autonomous Omnichannel Retail Operations & AI Engine">
-  <meta name="description" content="Haytool Commerce automates high-volume retail operations, marketplace return disputes, and customer support across Amazon, Trendyol, Hepsiburada, and Shopify in real time.">
+  <meta id="meta-desc" name="description" content="Haytool Commerce automates high-volume retail operations, marketplace return disputes, and customer support across Amazon, Trendyol, Hepsiburada, and Shopify in real time.">
   <meta name="author" content="Kenan Tas">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#090B10">
@@ -219,12 +219,12 @@
   <aside class="border-b border-brand-border bg-brand-dark/90 text-xs py-2 px-4 text-center text-slate-400 flex items-center justify-center gap-3">
     <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
       <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-ring"></span>
-      All Systems Operational
+      <span data-i18n="top_operational">All Systems Operational</span>
     </span>
     <span class="text-slate-600 hidden sm:inline">&bull;</span>
-    <span class="hidden sm:inline">Active Multi-Tenant Operations Engine v2.4</span>
+    <span class="hidden sm:inline" data-i18n="top_engine">Active Multi-Tenant Operations Engine v2.4</span>
     <span class="text-slate-600 hidden md:inline">&bull;</span>
-    <a href="#verification" class="text-brand-cyan hover:underline font-medium inline-flex items-center gap-1">
+    <a href="#verification" class="text-brand-cyan hover:underline font-medium inline-flex items-center gap-1" data-i18n="top_cert">
       Bilişim Vadisi R&D Certified &rarr;
     </a>
   </aside>
@@ -257,56 +257,73 @@
             <span class="text-xl font-extrabold tracking-tight text-white group-hover:text-brand-cyan transition-colors">HAYTOOL</span>
             <span class="text-[10px] font-bold tracking-widest text-brand-cyan bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/60">COMMERCE</span>
           </div>
-          <span class="text-[10px] text-slate-400 font-mono tracking-wide">AUTONOMOUS RETAIL AI</span>
+          <span class="text-[10px] text-slate-400 font-mono tracking-wide" data-i18n="brand_tagline">AUTONOMOUS RETAIL AI</span>
         </div>
       </a>
 
       <!-- Desktop Nav Links -->
       <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-300">
-        <a href="#platform" class="hover:text-white transition-colors">Platform</a>
+        <a href="#platform" class="hover:text-white transition-colors" data-i18n="nav_platform">Platform</a>
         <a href="#cockpit" class="hover:text-white transition-colors flex items-center gap-1.5">
-          <span>Live Cockpit</span>
-          <span class="text-[9px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.5 rounded border border-indigo-500/30 font-mono">LIVE</span>
+          <span data-i18n="nav_cockpit">Live Cockpit</span>
+          <span class="text-[9px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.5 rounded border border-indigo-500/30 font-mono" data-i18n="badge_live">LIVE</span>
         </a>
-        <a href="#integrations" class="hover:text-white transition-colors">Integrations</a>
-        <a href="#calculator" class="hover:text-white transition-colors">ROI Calculator</a>
-        <a href="#verification" class="hover:text-white transition-colors">Verification</a>
-        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+        <a href="#integrations" class="hover:text-white transition-colors" data-i18n="nav_integrations">Integrations</a>
+        <a href="#calculator" class="hover:text-white transition-colors" data-i18n="nav_calculator">ROI Calculator</a>
+        <a href="#verification" class="hover:text-white transition-colors" data-i18n="nav_verification">Verification</a>
+        <a href="#faq" class="hover:text-white transition-colors" data-i18n="nav_faq">FAQ</a>
       </nav>
 
-      <!-- Action Buttons -->
+      <!-- Action Buttons & Language Switcher -->
       <div class="hidden sm:flex items-center space-x-3">
-        <a href="mailto:kenan.tas@haytool.online" class="text-xs font-semibold px-4 py-2.5 rounded-xl bg-brand-card hover:bg-slate-800 border border-brand-border hover:border-slate-600 text-slate-300 hover:text-white transition-all">
+        
+        <!-- Language Switcher Pill -->
+        <div class="inline-flex items-center p-1 rounded-xl bg-brand-card border border-brand-border text-xs font-semibold mr-1 shadow-sm">
+          <button onclick="setLanguage('en')" id="lang-btn-en" class="px-2.5 py-1 rounded-lg transition-all text-brand-cyan bg-slate-850 font-bold" aria-label="Switch to English">EN</button>
+          <button onclick="setLanguage('tr')" id="lang-btn-tr" class="px-2.5 py-1 rounded-lg transition-all text-slate-400 hover:text-white" aria-label="Türkçe'ye geç">TR</button>
+        </div>
+
+        <a href="mailto:kenan.tas@haytool.online" class="text-xs font-semibold px-4 py-2.5 rounded-xl bg-brand-card hover:bg-slate-800 border border-brand-border hover:border-slate-600 text-slate-300 hover:text-white transition-all" data-i18n="btn_contact_founder">
           Contact Founder
         </a>
-        <button onclick="openPilotModal()" class="text-xs font-semibold px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold transition-all shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98]">
+        <button onclick="openPilotModal()" class="text-xs font-semibold px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold transition-all shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98]" data-i18n="btn_request_pilot">
           Request Pilot Access
         </button>
       </div>
 
       <!-- Mobile Menu Toggle Button -->
-      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle navigation menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+      <div class="lg:hidden flex items-center gap-2">
+        <!-- Mobile Language Pill -->
+        <div class="inline-flex items-center p-0.5 rounded-lg bg-brand-card border border-brand-border text-[11px] font-semibold">
+          <button onclick="setLanguage('en')" id="mobile-quick-en" class="px-2 py-0.5 rounded text-brand-cyan font-bold">EN</button>
+          <button onclick="setLanguage('tr')" id="mobile-quick-tr" class="px-2 py-0.5 rounded text-slate-400">TR</button>
+        </div>
+
+        <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
     </div>
 
     <!-- Mobile Navigation Drawer -->
     <div id="mobile-menu" class="hidden lg:hidden border-t border-brand-border bg-brand-dark/95 px-6 py-6 space-y-4">
       <nav class="flex flex-col space-y-3 text-sm font-medium text-slate-300">
-        <a href="#platform" class="py-1 hover:text-white transition-colors">Platform</a>
-        <a href="#cockpit" class="py-1 hover:text-white transition-colors">Live Cockpit Telemetry</a>
-        <a href="#integrations" class="py-1 hover:text-white transition-colors">Marketplace Integrations</a>
-        <a href="#calculator" class="py-1 hover:text-white transition-colors">ROI Savings Calculator</a>
-        <a href="#verification" class="py-1 hover:text-white transition-colors">Corporate Verification</a>
-        <a href="#faq" class="py-1 hover:text-white transition-colors">Frequently Asked Questions</a>
+        <a href="#platform" class="py-1 hover:text-white transition-colors" data-i18n="nav_platform">Platform</a>
+        <a href="#cockpit" class="py-1 hover:text-white transition-colors" data-i18n="nav_cockpit_full">Live Cockpit Telemetry</a>
+        <a href="#integrations" class="py-1 hover:text-white transition-colors" data-i18n="nav_integrations_full">Marketplace Integrations</a>
+        <a href="#calculator" class="py-1 hover:text-white transition-colors" data-i18n="nav_calculator_full">ROI Savings Calculator</a>
+        <a href="#verification" class="py-1 hover:text-white transition-colors" data-i18n="nav_verification_full">Corporate Verification</a>
+        <a href="#faq" class="py-1 hover:text-white transition-colors" data-i18n="nav_faq_full">Frequently Asked Questions</a>
       </nav>
+
       <div class="pt-4 border-t border-slate-800 flex flex-col gap-2.5">
-        <button onclick="openPilotModal()" class="w-full text-center py-2.5 rounded-xl bg-brand-cyan text-slate-950 font-bold text-sm">
+        <button onclick="openPilotModal()" class="w-full text-center py-2.5 rounded-xl bg-brand-cyan text-slate-950 font-bold text-sm" data-i18n="btn_request_pilot">
           Request Pilot Access
         </button>
-        <a href="mailto:kenan.tas@haytool.online" class="w-full text-center py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 text-sm font-medium">
+        <a href="mailto:kenan.tas@haytool.online" class="w-full text-center py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 text-sm font-medium" data-i18n="btn_contact_founder">
           Contact Founder
         </a>
       </div>
@@ -325,30 +342,30 @@
             
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-mono text-slate-300">
               <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-              <span>Autonomous Omnichannel Engine &bull; Zero PII Retention</span>
+              <span data-i18n="hero_pill">Autonomous Omnichannel Engine &bull; Zero PII Retention</span>
             </div>
 
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-              Omnichannel Retail Operations <br>
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
+              <span data-i18n="hero_title_1">Omnichannel Retail Operations</span> <br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400" data-i18n="hero_title_2">
                 Driven by Autonomous AI
               </span>
             </h1>
 
-            <p class="text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+            <p class="text-lg text-slate-300 leading-relaxed max-w-2xl font-normal" data-i18n="hero_desc">
               Haytool connects Amazon, Trendyol, Hepsiburada, and Shopify into a unified real-time operations engine. Resolve customer inquiries, marketplace return disputes, and logistics discrepancies in seconds — while shielding your seller rating.
             </p>
 
             <!-- Actions & Social Proof Badges -->
             <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <button onclick="openPilotModal()" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan flex items-center justify-center gap-2 group">
-                <span>Schedule Merchant Pilot</span>
+                <span data-i18n="hero_cta_primary">Schedule Merchant Pilot</span>
                 <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </button>
               
               <a href="#cockpit" class="px-7 py-4 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-sm transition-all flex items-center justify-center gap-2">
                 <svg class="w-4 h-4 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                <span>Inspect Live Stream</span>
+                <span data-i18n="hero_cta_secondary">Inspect Live Stream</span>
               </a>
             </div>
 
@@ -356,15 +373,15 @@
             <div class="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-y-3 gap-x-6 text-xs text-slate-400 font-medium">
               <div class="flex items-center gap-1.5">
                 <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Bilişim Vadisi Technopark R&D</span>
+                <span data-i18n="trust_bilisim">Bilişim Vadisi Technopark R&D</span>
               </div>
               <div class="flex items-center gap-1.5">
                 <svg class="w-4 h-4 text-cyan-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>No API Code Changes Needed</span>
+                <span data-i18n="trust_no_code">No API Code Changes Needed</span>
               </div>
               <div class="flex items-center gap-1.5">
                 <svg class="w-4 h-4 text-indigo-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>End-to-End Encryption</span>
+                <span data-i18n="trust_encryption">End-to-End Encryption</span>
               </div>
             </div>
 
@@ -384,7 +401,7 @@
                 </div>
                 <div class="flex items-center gap-2">
                   <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                  <span class="font-mono text-[11px] text-emerald-400 font-semibold">STREAMING</span>
+                  <span class="font-mono text-[11px] text-emerald-400 font-semibold" data-i18n="cockpit_streaming">STREAMING</span>
                 </div>
               </div>
 
@@ -394,39 +411,39 @@
                 <!-- Event 1 -->
                 <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 transition-all hover:border-brand-cyan/40">
                   <div class="flex items-center justify-between text-slate-400 mb-1.5">
-                    <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 font-semibold text-[10px] border border-amber-500/20">AMAZON DISPUTE</span>
-                    <span class="text-[10px] text-slate-500">Just now</span>
+                    <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 font-semibold text-[10px] border border-amber-500/20" data-i18n="ticker_1_tag">AMAZON DISPUTE</span>
+                    <span class="text-[10px] text-slate-500" data-i18n="ticker_1_time">Just now</span>
                   </div>
-                  <p class="text-slate-200 font-sans font-medium text-xs">Return claim #AMZ-4029: Disputed item weight mismatch</p>
+                  <p class="text-slate-200 font-sans font-medium text-xs" data-i18n="ticker_1_desc">Return claim #AMZ-4029: Disputed item weight mismatch</p>
                   <div class="mt-2 text-[11px] text-emerald-400 flex items-center justify-between bg-slate-950 px-2 py-1.5 rounded border border-slate-800">
-                    <span>&check; Matched warehouse departure photo + Yurtiçi tracking</span>
-                    <span class="font-bold text-white">+840 ₺ Saved</span>
+                    <span data-i18n="ticker_1_action">&check; Matched warehouse departure photo + Yurtiçi tracking</span>
+                    <span class="font-bold text-white" data-i18n="ticker_1_metric">+840 ₺ Saved</span>
                   </div>
                 </div>
 
                 <!-- Event 2 -->
                 <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 transition-all hover:border-brand-cyan/40">
                   <div class="flex items-center justify-between text-slate-400 mb-1.5">
-                    <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 font-semibold text-[10px] border border-orange-500/20">TRENDYOL QUESTION</span>
-                    <span class="text-[10px] text-slate-500">12s ago</span>
+                    <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 font-semibold text-[10px] border border-orange-500/20" data-i18n="ticker_2_tag">TRENDYOL QUESTION</span>
+                    <span class="text-[10px] text-slate-500" data-i18n="ticker_2_time">12s ago</span>
                   </div>
-                  <p class="text-slate-200 font-sans font-medium text-xs">Buyer Query: "Does this size fit standard EU 42?"</p>
+                  <p class="text-slate-200 font-sans font-medium text-xs" data-i18n="ticker_2_desc">Buyer Query: "Does this size fit standard EU 42?"</p>
                   <div class="mt-2 text-[11px] text-cyan-300 flex items-center justify-between bg-slate-950 px-2 py-1.5 rounded border border-slate-800">
-                    <span>&check; Catalog prompt cached: Responded in 1.4s</span>
-                    <span class="text-slate-400 font-mono">100% Policy Pass</span>
+                    <span data-i18n="ticker_2_action">&check; Catalog prompt cached: Responded in 1.4s</span>
+                    <span class="text-slate-400 font-mono" data-i18n="ticker_2_metric">100% Policy Pass</span>
                   </div>
                 </div>
 
                 <!-- Event 3 -->
                 <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 transition-all hover:border-brand-cyan/40">
                   <div class="flex items-center justify-between text-slate-400 mb-1.5">
-                    <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 font-semibold text-[10px] border border-emerald-500/20">SHOPIFY &times; HEPSİBURADA</span>
-                    <span class="text-[10px] text-slate-500">45s ago</span>
+                    <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 font-semibold text-[10px] border border-emerald-500/20" data-i18n="ticker_3_tag">SHOPIFY &times; HEPSİBURADA</span>
+                    <span class="text-[10px] text-slate-500" data-i18n="ticker_3_time">45s ago</span>
                   </div>
-                  <p class="text-slate-200 font-sans font-medium text-xs">Inventory synchronization across 1,840 SKUs</p>
+                  <p class="text-slate-200 font-sans font-medium text-xs" data-i18n="ticker_3_desc">Inventory synchronization across 1,840 SKUs</p>
                   <div class="mt-2 text-[11px] text-indigo-300 flex items-center justify-between bg-slate-950 px-2 py-1.5 rounded border border-slate-800">
-                    <span>&check; Stock buffer locked &bull; Prevented overselling</span>
-                    <span class="text-emerald-400 font-mono">0 Latency</span>
+                    <span data-i18n="ticker_3_action">&check; Stock buffer locked &bull; Prevented overselling</span>
+                    <span class="text-emerald-400 font-mono" data-i18n="ticker_3_metric">0 Latency</span>
                   </div>
                 </div>
 
@@ -434,8 +451,8 @@
 
               <!-- Cockpit Footer Telemetry Bar -->
               <div class="mt-4 pt-4 border-t border-brand-border flex items-center justify-between text-[11px] text-slate-400 font-mono">
-                <span>Active Channels: <strong class="text-white">5 Marketplaces</strong></span>
-                <span>Avg Latency: <strong class="text-emerald-400">88ms</strong></span>
+                <span data-i18n-html="cockpit_channels">Active Channels: <strong class="text-white">5 Marketplaces</strong></span>
+                <span data-i18n-html="cockpit_latency">Avg Latency: <strong class="text-emerald-400">88ms</strong></span>
               </div>
 
             </div>
@@ -454,32 +471,32 @@
             <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-blue-400 mb-1">
               -74%
             </div>
-            <div class="text-sm font-semibold text-white mb-1">Resolution Time Drop</div>
-            <p class="text-xs text-slate-400">Automatic escalation and grounded evidence bundling.</p>
+            <div class="text-sm font-semibold text-white mb-1" data-i18n="metric_1_title">Resolution Time Drop</div>
+            <p class="text-xs text-slate-400" data-i18n="metric_1_desc">Automatic escalation and grounded evidence bundling.</p>
           </div>
 
           <div class="p-6 rounded-2xl bg-brand-card/80 border border-brand-border hover:border-brand-hoverBorder transition-all">
             <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-indigo-400 mb-1">
               &lt; 90s
             </div>
-            <div class="text-sm font-semibold text-white mb-1">Median Turnaround</div>
-            <p class="text-xs text-slate-400">Buyer inquiry to verified resolution across all channels.</p>
+            <div class="text-sm font-semibold text-white mb-1" data-i18n="metric_2_title">Median Turnaround</div>
+            <p class="text-xs text-slate-400" data-i18n="metric_2_desc">Buyer inquiry to verified resolution across all channels.</p>
           </div>
 
           <div class="p-6 rounded-2xl bg-brand-card/80 border border-brand-border hover:border-brand-hoverBorder transition-all">
             <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 mb-1">
               99.4%
             </div>
-            <div class="text-sm font-semibold text-white mb-1">Store CSAT Rating</div>
-            <p class="text-xs text-slate-400">Maintains peak seller metrics on Amazon Buy Box & Trendyol.</p>
+            <div class="text-sm font-semibold text-white mb-1" data-i18n="metric_3_title">Store CSAT Rating</div>
+            <p class="text-xs text-slate-400" data-i18n="metric_3_desc">Maintains peak seller metrics on Amazon Buy Box & Trendyol.</p>
           </div>
 
           <div class="p-6 rounded-2xl bg-brand-card/80 border border-brand-border hover:border-brand-hoverBorder transition-all">
-            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1" data-i18n="metric_4_val">
               Zero PII
             </div>
-            <div class="text-sm font-semibold text-white mb-1">Customer Privacy First</div>
-            <p class="text-xs text-slate-400">Ephemeral memory processing compliant with GDPR & KVKK.</p>
+            <div class="text-sm font-semibold text-white mb-1" data-i18n="metric_4_title">Customer Privacy First</div>
+            <p class="text-xs text-slate-400" data-i18n="metric_4_desc">Ephemeral memory processing compliant with GDPR & KVKK.</p>
           </div>
 
         </div>
@@ -492,28 +509,28 @@
         
         <div class="text-center max-w-3xl mx-auto mb-16">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/60 text-xs font-mono text-brand-cyan mb-4">
-            <span>ENGINEERED ARCHITECTURE</span>
+            <span data-i18n="platform_tag">ENGINEERED ARCHITECTURE</span>
           </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight" data-i18n="platform_headline">
             Comprehensive Automation for High-Velocity Merchants
           </h2>
-          <p class="mt-4 text-base text-slate-400">
+          <p class="mt-4 text-base text-slate-400" data-i18n="platform_subhead">
             Four specialized modules working synchronously to handle retail volume spikes without expanding headcounts.
           </p>
         </div>
 
         <!-- Interactive Module Tabs -->
         <div class="flex flex-wrap items-center justify-center gap-2 mb-10 max-w-4xl mx-auto p-1.5 rounded-2xl bg-slate-900 border border-slate-800" role="tablist">
-          <button onclick="switchTab('dispute')" id="tab-btn-dispute" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-cyan text-slate-950 shadow-glow-cyan" role="tab" aria-selected="true">
+          <button onclick="switchTab('dispute')" id="tab-btn-dispute" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-cyan text-slate-950 shadow-glow-cyan" role="tab" aria-selected="true" data-i18n="tab_1_btn">
             01. Autonomous Dispute Engine
           </button>
-          <button onclick="switchTab('inquiries')" id="tab-btn-inquiries" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false">
+          <button onclick="switchTab('inquiries')" id="tab-btn-inquiries" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false" data-i18n="tab_2_btn">
             02. Context-Aware Inquiries
           </button>
-          <button onclick="switchTab('catalog')" id="tab-btn-catalog" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false">
+          <button onclick="switchTab('catalog')" id="tab-btn-catalog" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false" data-i18n="tab_3_btn">
             03. Token-Cached Catalog
           </button>
-          <button onclick="switchTab('shield')" id="tab-btn-shield" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false">
+          <button onclick="switchTab('shield')" id="tab-btn-shield" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false" data-i18n="tab_4_btn">
             04. Marketplace Metric Shield
           </button>
         </div>
@@ -521,35 +538,35 @@
         <!-- Tab 1: Dispute Engine -->
         <div id="tab-content-dispute" class="grid lg:grid-cols-12 gap-8 items-center rounded-3xl bg-brand-card border border-brand-border p-8 lg:p-12">
           <div class="lg:col-span-6 space-y-5">
-            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider">Module 01 &bull; Loss Prevention</span>
-            <h3 class="text-2xl sm:text-3xl font-bold text-white">Autonomous Dispute & Return Package Resolution</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
+            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider" data-i18n="mod_1_tag">Module 01 &bull; Loss Prevention</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white" data-i18n="mod_1_title">Autonomous Dispute & Return Package Resolution</h3>
+            <p class="text-sm text-slate-300 leading-relaxed" data-i18n="mod_1_desc">
               Disputed returns represent one of the biggest profit drains for omnichannel merchants. Haytool's Dispute Engine retrieves carrier proof-of-delivery timestamps, weight stamps from your 3PL, and matches them directly with the marketplace return policy.
             </p>
             <ul class="space-y-3 text-sm text-slate-300">
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Automated generation of claim dossiers for Amazon SAFE-T and Trendyol İtiraz.</span>
+                <span data-i18n="mod_1_point_1">Automated generation of claim dossiers for Amazon SAFE-T and Trendyol İtiraz.</span>
               </li>
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Barcode weight triangulation stops claims on empty or substituted boxes.</span>
+                <span data-i18n="mod_1_point_2">Barcode weight triangulation stops claims on empty or substituted boxes.</span>
               </li>
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Recovers up to 68% of lost inventory costs without manual clerical hours.</span>
+                <span data-i18n="mod_1_point_3">Recovers up to 68% of lost inventory costs without manual clerical hours.</span>
               </li>
             </ul>
           </div>
           <div class="lg:col-span-6 bg-slate-950/80 rounded-2xl border border-slate-800 p-6 font-mono text-xs text-slate-300 space-y-3">
             <div class="text-slate-400 text-[11px] pb-2 border-b border-slate-800 flex justify-between">
               <span>EVIDENCE_DOSSIER_GEN.v2</span>
-              <span class="text-emerald-400">VALIDATED</span>
+              <span class="text-emerald-400" data-i18n="status_validated">VALIDATED</span>
             </div>
-            <div class="text-slate-400">Order ID: <span class="text-white">#AMZ-8201-9482</span></div>
-            <div class="text-slate-400">Carrier Scan: <span class="text-white">Yurtiçi Kargo #9482109 (Delivered 14:22)</span></div>
-            <div class="text-slate-400">Departure Weight: <span class="text-white">1,420g</span> &bull; Returned Box: <span class="text-rose-400">180g (Delta: -87%)</span></div>
-            <div class="p-3 rounded-lg bg-emerald-950/30 border border-emerald-800/40 text-emerald-300">
+            <div class="text-slate-400"><span data-i18n="lbl_order_id">Order ID:</span> <span class="text-white">#AMZ-8201-9482</span></div>
+            <div class="text-slate-400"><span data-i18n="lbl_carrier_scan">Carrier Scan:</span> <span class="text-white">Yurtiçi Kargo #9482109 (Delivered 14:22)</span></div>
+            <div class="text-slate-400"><span data-i18n="lbl_weight">Departure Weight:</span> <span class="text-white">1,420g</span> &bull; <span data-i18n="lbl_returned">Returned Box:</span> <span class="text-rose-400">180g (Delta: -87%)</span></div>
+            <div class="p-3 rounded-lg bg-emerald-950/30 border border-emerald-800/40 text-emerald-300" data-i18n="mod_1_log">
               &gt; AI Action: Auto-submitted photographic discrepancy proof to Marketplace Arbitration Board with invoice attachment.
             </div>
           </div>
@@ -558,23 +575,23 @@
         <!-- Tab 2: Inquiries (Hidden by default) -->
         <div id="tab-content-inquiries" class="hidden grid lg:grid-cols-12 gap-8 items-center rounded-3xl bg-brand-card border border-brand-border p-8 lg:p-12">
           <div class="lg:col-span-6 space-y-5">
-            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider">Module 02 &bull; Customer Care Copilot</span>
-            <h3 class="text-2xl sm:text-3xl font-bold text-white">Context-Aware Omnichannel Inquiries</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
+            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider" data-i18n="mod_2_tag">Module 02 &bull; Customer Care Copilot</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white" data-i18n="mod_2_title">Context-Aware Omnichannel Inquiries</h3>
+            <p class="text-sm text-slate-300 leading-relaxed" data-i18n="mod_2_desc">
               Standard chatbots fail because they lack real-time context about buyer history, specific SKU compatibility, and live carrier transit status. Haytool continuously aggregates catalog attributes and carrier events to construct accurate answers instantly.
             </p>
             <ul class="space-y-3 text-sm text-slate-300">
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Multilingual support across Turkish, English, German, and Arabic.</span>
+                <span data-i18n="mod_2_point_1">Multilingual support across Turkish, English, German, and Arabic.</span>
               </li>
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Direct carrier webhook lookup: answers "Where is my shipment?" in under 2 seconds.</span>
+                <span data-i18n="mod_2_point_2">Direct carrier webhook lookup: answers "Where is my shipment?" in under 2 seconds.</span>
               </li>
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Adheres strictly to marketplace communication rules to prevent seller account penalties.</span>
+                <span data-i18n="mod_2_point_3">Adheres strictly to marketplace communication rules to prevent seller account penalties.</span>
               </li>
             </ul>
           </div>
@@ -583,10 +600,10 @@
               <span>BUYER_QUERY_RESOLVER</span>
               <span class="text-cyan-400">90s SLA</span>
             </div>
-            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-300">
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-300" data-i18n="mod_2_msg_in">
               Buyer (Trendyol): "Siparişim kargoya verildi mi? Yarın elimde olur mu?"
             </div>
-            <div class="p-3 rounded-lg bg-cyan-950/30 border border-cyan-800/40 text-cyan-200">
+            <div class="p-3 rounded-lg bg-cyan-950/30 border border-cyan-800/40 text-cyan-200" data-i18n="mod_2_msg_out">
               &gt; Haytool AI: "Merhaba! Siparişiniz bugün saat 15:30'da Aras Kargo Gebze Şubesi'nden yola çıkmıştır (Takip No: 28491823). Teslimat adresinize göre yarın saat 12:00–16:00 arasında teslim edilmesi planlanmaktadır."
             </div>
           </div>
@@ -595,19 +612,19 @@
         <!-- Tab 3: Catalog (Hidden by default) -->
         <div id="tab-content-catalog" class="hidden grid lg:grid-cols-12 gap-8 items-center rounded-3xl bg-brand-card border border-brand-border p-8 lg:p-12">
           <div class="lg:col-span-6 space-y-5">
-            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider">Module 03 &bull; Deep Inference Caching</span>
-            <h3 class="text-2xl sm:text-3xl font-bold text-white">Prompt Caching & High-Density SKU Index</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
+            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider" data-i18n="mod_3_tag">Module 03 &bull; Deep Inference Caching</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white" data-i18n="mod_3_title">Prompt Caching & High-Density SKU Index</h3>
+            <p class="text-sm text-slate-300 leading-relaxed" data-i18n="mod_3_desc">
               When catalog sizes exceed 50,000 SKUs, standard LLM queries become slow and cost-prohibitive. Haytool structures catalog specs into cached contextual embeddings, keeping token costs down by 80% while enabling sub-second inferences during peak shopping events.
             </p>
             <ul class="space-y-3 text-sm text-slate-300">
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Zero latency degradation during Black Friday and Cyber Week surges.</span>
+                <span data-i18n="mod_3_point_1">Zero latency degradation during Black Friday and Cyber Week surges.</span>
               </li>
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Real-time price & stock reconciliation between marketplaces and ERPs.</span>
+                <span data-i18n="mod_3_point_2">Real-time price & stock reconciliation between marketplaces and ERPs.</span>
               </li>
             </ul>
           </div>
@@ -616,46 +633,46 @@
               <span>TOKEN_CACHE_TELEMETRY</span>
               <span class="text-purple-400">92% HIT RATE</span>
             </div>
-            <div class="text-slate-400">Indexed Catalog: <span class="text-white">124,500 Active SKUs</span></div>
-            <div class="text-slate-400">Cached Prompt Tokens: <span class="text-cyan-400">182,400 Tokens (Pre-Indexed)</span></div>
-            <div class="text-slate-400">Inference Response Time: <span class="text-emerald-400">62ms avg</span></div>
+            <div class="text-slate-400"><span data-i18n="lbl_indexed_catalog">Indexed Catalog:</span> <span class="text-white">124,500 Active SKUs</span></div>
+            <div class="text-slate-400"><span data-i18n="lbl_cached_tokens">Cached Prompt Tokens:</span> <span class="text-cyan-400">182,400 Tokens (Pre-Indexed)</span></div>
+            <div class="text-slate-400"><span data-i18n="lbl_resp_time">Inference Response Time:</span> <span class="text-emerald-400">62ms avg</span></div>
           </div>
         </div>
 
         <!-- Tab 4: Shield (Hidden by default) -->
         <div id="tab-content-shield" class="hidden grid lg:grid-cols-12 gap-8 items-center rounded-3xl bg-brand-card border border-brand-border p-8 lg:p-12">
           <div class="lg:col-span-6 space-y-5">
-            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider">Module 04 &bull; Account Defense</span>
-            <h3 class="text-2xl sm:text-3xl font-bold text-white">Marketplace Metric Shield</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
+            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider" data-i18n="mod_4_tag">Module 04 &bull; Account Defense</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white" data-i18n="mod_4_title">Marketplace Metric Shield</h3>
+            <p class="text-sm text-slate-300 leading-relaxed" data-i18n="mod_4_desc">
               Late Dispatch Rate (LDR), Order Defect Rate (ODR), and Unanswered Messages can cause temporary or permanent marketplace suspensions. The Metric Shield proactively tracks SLAs and routes urgent tickets to automated emergency workflows.
             </p>
             <ul class="space-y-3 text-sm text-slate-300">
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Amazon Buy Box &amp; Trendyol Mağaza Puanı protection.</span>
+                <span data-i18n="mod_4_point_1">Amazon Buy Box &amp; Trendyol Mağaza Puanı protection.</span>
               </li>
               <li class="flex items-center gap-3">
                 <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                <span>Automated carrier tracking notifications prevent anxious customer inquiries before they arise.</span>
+                <span data-i18n="mod_4_point_2">Automated carrier tracking notifications prevent anxious customer inquiries before they arise.</span>
               </li>
             </ul>
           </div>
           <div class="lg:col-span-6 bg-slate-950/80 rounded-2xl border border-slate-800 p-6 font-mono text-xs text-slate-300 space-y-3">
             <div class="text-slate-400 text-[11px] pb-2 border-b border-slate-800 flex justify-between">
               <span>METRIC_STATUS</span>
-              <span class="text-emerald-400">100% HEALTH</span>
+              <span class="text-emerald-400" data-i18n="status_health">100% HEALTH</span>
             </div>
             <div class="flex justify-between items-center py-1 border-b border-slate-900">
-              <span>Amazon Order Defect Rate (ODR):</span>
+              <span data-i18n="shield_lbl_odr">Amazon Order Defect Rate (ODR):</span>
               <span class="text-emerald-400 font-bold">0.08% (&lt; 1% target)</span>
             </div>
             <div class="flex justify-between items-center py-1 border-b border-slate-900">
-              <span>Trendyol Cevaplama Süresi:</span>
+              <span data-i18n="shield_lbl_ty">Trendyol Cevaplama Süresi:</span>
               <span class="text-emerald-400 font-bold">4.2 Dakika (&lt; 15m)</span>
             </div>
             <div class="flex justify-between items-center py-1">
-              <span>Hepsiburada Zamanında Kargolama:</span>
+              <span data-i18n="shield_lbl_hb">Hepsiburada Zamanında Kargolama:</span>
               <span class="text-emerald-400 font-bold">99.8%</span>
             </div>
           </div>
@@ -667,9 +684,9 @@
     <!-- Marketplace & Storefront Integrations Grid -->
     <section id="integrations" class="py-20 bg-brand-dark border-b border-brand-border">
       <div class="max-w-7xl mx-auto px-6 text-center">
-        <span class="text-xs font-mono text-slate-400 uppercase tracking-widest">ECOSYSTEM SYNC</span>
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">Direct Connectors for Leading Marketplaces</h2>
-        <p class="text-sm text-slate-400 max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-mono text-slate-400 uppercase tracking-widest" data-i18n="int_tag">ECOSYSTEM SYNC</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4" data-i18n="int_headline">Direct Connectors for Leading Marketplaces</h2>
+        <p class="text-sm text-slate-400 max-w-2xl mx-auto mb-12" data-i18n="int_desc">
           Plug Haytool directly into your active channels with pre-built authorized API integrations. Zero webhook infrastructure required from your engineering team.
         </p>
 
@@ -680,7 +697,7 @@
               AZ
             </div>
             <div class="font-bold text-sm text-white">Amazon SP-API</div>
-            <span class="text-[10px] text-emerald-400 font-mono">Rest &bull; Bi-directional</span>
+            <span class="text-[10px] text-emerald-400 font-mono" data-i18n="int_sub_rest">Rest &bull; Bi-directional</span>
           </div>
 
           <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
@@ -688,7 +705,7 @@
               TY
             </div>
             <div class="font-bold text-sm text-white">Trendyol Partner</div>
-            <span class="text-[10px] text-emerald-400 font-mono">Webhooks &bull; Realtime</span>
+            <span class="text-[10px] text-emerald-400 font-mono" data-i18n="int_sub_realtime">Webhooks &bull; Realtime</span>
           </div>
 
           <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
@@ -696,7 +713,7 @@
               HB
             </div>
             <div class="font-bold text-sm text-white">Hepsiburada</div>
-            <span class="text-[10px] text-emerald-400 font-mono">Merchant API</span>
+            <span class="text-[10px] text-emerald-400 font-mono" data-i18n="int_sub_merchant">Merchant API</span>
           </div>
 
           <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
@@ -704,7 +721,7 @@
               SH
             </div>
             <div class="font-bold text-sm text-white">Shopify Plus</div>
-            <span class="text-[10px] text-emerald-400 font-mono">GraphQL &bull; Webhooks</span>
+            <span class="text-[10px] text-emerald-400 font-mono" data-i18n="int_sub_graphql">GraphQL &bull; Webhooks</span>
           </div>
 
           <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
@@ -712,14 +729,14 @@
               CS
             </div>
             <div class="font-bold text-sm text-white">Çiçeksepeti</div>
-            <span class="text-[10px] text-emerald-400 font-mono">Vendor API</span>
+            <span class="text-[10px] text-emerald-400 font-mono" data-i18n="int_sub_vendor">Vendor API</span>
           </div>
 
           <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
             <div class="w-10 h-10 mx-auto rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold mb-3">
               3PL
             </div>
-            <div class="font-bold text-sm text-white">Carriers &amp; ERP</div>
+            <div class="font-bold text-sm text-white" data-i18n="int_sub_carriers">Carriers &amp; ERP</div>
             <span class="text-[10px] text-emerald-400 font-mono">Aras, Yurtiçi, SAP</span>
           </div>
 
@@ -732,9 +749,9 @@
       <div class="max-w-4xl mx-auto px-6">
         
         <div class="text-center mb-12">
-          <span class="text-xs font-mono text-brand-cyan uppercase tracking-widest">PROVABLE ROI</span>
-          <h2 class="text-3xl font-extrabold text-white mt-1">Estimate Your Monthly Operational Savings</h2>
-          <p class="text-slate-400 text-sm mt-2">Adjust your estimated monthly order volume across all marketplace channels.</p>
+          <span class="text-xs font-mono text-brand-cyan uppercase tracking-widest" data-i18n="calc_tag">PROVABLE ROI</span>
+          <h2 class="text-3xl font-extrabold text-white mt-1" data-i18n="calc_headline">Estimate Your Monthly Operational Savings</h2>
+          <p class="text-slate-400 text-sm mt-2" data-i18n="calc_subhead">Adjust your estimated monthly order volume across all marketplace channels.</p>
         </div>
 
         <div class="p-8 sm:p-10 rounded-3xl bg-brand-card border border-brand-border shadow-2xl space-y-8">
@@ -742,14 +759,14 @@
           <!-- Slider Control -->
           <div>
             <div class="flex justify-between items-center mb-3">
-              <label for="order-slider" class="text-sm font-semibold text-slate-200">Monthly Marketplace Orders:</label>
+              <label for="order-slider" class="text-sm font-semibold text-slate-200" data-i18n="calc_slider_lbl">Monthly Marketplace Orders:</label>
               <span id="order-count-display" class="font-mono text-xl font-extrabold text-brand-cyan">15,000</span>
             </div>
             <input type="range" id="order-slider" min="1000" max="100000" step="1000" value="15000" class="w-full h-2.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400" oninput="calculateSavings(this.value)">
             <div class="flex justify-between text-[11px] text-slate-500 font-mono mt-2">
-              <span>1,000 orders</span>
+              <span data-i18n="calc_min">1,000 orders</span>
               <span>50,000</span>
-              <span>100,000 orders</span>
+              <span data-i18n="calc_max">100,000 orders</span>
             </div>
           </div>
 
@@ -757,27 +774,27 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800">
             
             <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
-              <div class="text-xs text-slate-400 mb-1">Disputes Automated / mo</div>
+              <div class="text-xs text-slate-400 mb-1" data-i18n="calc_card_1_title">Disputes Automated / mo</div>
               <div id="stat-disputes" class="text-2xl font-extrabold text-white font-mono">450</div>
-              <div class="text-[10px] text-emerald-400 mt-1">&plusmn; 68% Win Rate</div>
+              <div class="text-[10px] text-emerald-400 mt-1" data-i18n="calc_card_1_sub">&plusmn; 68% Win Rate</div>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
-              <div class="text-xs text-slate-400 mb-1">Agent Hours Saved</div>
+              <div class="text-xs text-slate-400 mb-1" data-i18n="calc_card_2_title">Agent Hours Saved</div>
               <div id="stat-hours" class="text-2xl font-extrabold text-brand-cyan font-mono">188 hrs</div>
-              <div class="text-[10px] text-slate-400 mt-1">~1.2 FTE Equivalent</div>
+              <div class="text-[10px] text-slate-400 mt-1" data-i18n="calc_card_2_sub">~1.2 FTE Equivalent</div>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
-              <div class="text-xs text-slate-400 mb-1">Projected Monthly Savings</div>
+              <div class="text-xs text-slate-400 mb-1" data-i18n="calc_card_3_title">Projected Monthly Savings</div>
               <div id="stat-savings" class="text-2xl font-extrabold text-emerald-400 font-mono">₺ 84,000</div>
-              <div class="text-[10px] text-slate-400 mt-1">Returns + Support Overhead</div>
+              <div class="text-[10px] text-slate-400 mt-1" data-i18n="calc_card_3_sub">Returns + Support Overhead</div>
             </div>
 
           </div>
 
           <div class="text-center pt-2">
-            <button onclick="openPilotModal()" class="px-8 py-3.5 rounded-xl bg-brand-cyan hover:bg-cyan-400 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan">
+            <button onclick="openPilotModal()" class="px-8 py-3.5 rounded-xl bg-brand-cyan hover:bg-cyan-400 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan" data-i18n="calc_cta">
               Unlock These Savings &bull; Request Pilot
             </button>
           </div>
@@ -798,12 +815,12 @@
             <div>
               <div class="flex items-center gap-2 mb-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-                <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-wider">OFFICIALLY REGISTERED ENTITY</span>
+                <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-wider" data-i18n="verif_tag">OFFICIALLY REGISTERED ENTITY</span>
               </div>
-              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Haytool Commerce Corporate Record</h2>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white" data-i18n="verif_headline">Haytool Commerce Corporate Record</h2>
             </div>
             <div>
-              <span class="px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-xs font-semibold text-emerald-300">
+              <span class="px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-xs font-semibold text-emerald-300" data-i18n="verif_badge">
                 Active &bull; Good Standing
               </span>
             </div>
@@ -813,41 +830,41 @@
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
             
             <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
-              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Legal Entity / Trademark</p>
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1" data-i18n="corp_lbl_legal">Legal Entity / Trademark</p>
               <p class="font-bold text-white text-base">Haytool Commerce</p>
-              <p class="text-xs text-slate-400 mt-1">Retail AI & Automation</p>
+              <p class="text-xs text-slate-400 mt-1" data-i18n="corp_val_scope">Retail AI & Automation</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
-              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Founder & Executive</p>
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1" data-i18n="corp_lbl_founder">Founder & Executive</p>
               <p class="font-bold text-white text-base">Kenan Tas</p>
-              <p class="text-xs text-brand-cyan mt-1">Founder &amp; Chief Executive Officer</p>
+              <p class="text-xs text-brand-cyan mt-1" data-i18n="corp_val_title">Founder &amp; Chief Executive Officer</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
-              <p class="text-slate-400 text-xs uppercase font-medium mb-1">R&D Headquarters</p>
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1" data-i18n="corp_lbl_hq">R&D Headquarters</p>
               <p class="font-semibold text-slate-200">Bilisim Vadisi Teknoloji Bolgesi</p>
               <p class="text-xs text-slate-400 mt-1">Gebze, Kocaeli, Turkiye</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
-              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Registry Inception</p>
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1" data-i18n="corp_lbl_reg">Registry Inception</p>
               <p class="font-semibold text-slate-200">April 2024</p>
-              <p class="text-xs text-emerald-400 mt-1">Active Operations</p>
+              <p class="text-xs text-emerald-400 mt-1" data-i18n="corp_val_reg">Active Operations</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
-              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Executive Work Email</p>
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1" data-i18n="corp_lbl_email">Executive Work Email</p>
               <a href="mailto:kenan.tas@haytool.online" class="font-semibold text-brand-cyan hover:underline break-all">
                 kenan.tas@haytool.online
               </a>
-              <p class="text-xs text-slate-400 mt-1">Direct inquiries</p>
+              <p class="text-xs text-slate-400 mt-1" data-i18n="corp_val_email">Direct inquiries</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
-              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Direct Telephony</p>
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1" data-i18n="corp_lbl_tel">Direct Telephony</p>
               <p class="font-semibold text-slate-200">+90 (262) 678 80 40</p>
-              <p class="text-xs text-slate-400 mt-1">Headquarters switchboard</p>
+              <p class="text-xs text-slate-400 mt-1" data-i18n="corp_val_tel">Headquarters switchboard</p>
             </div>
 
           </div>
@@ -857,12 +874,12 @@
             
             <a href="https://www.crunchbase.com/organization/haytool-commerce" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-slate-500 text-xs font-semibold text-white transition-all shadow-sm">
               <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              <span>Verify on Crunchbase Database</span>
+              <span data-i18n="btn_crunchbase">Verify on Crunchbase Database</span>
             </a>
 
             <a href="https://www.linkedin.com/in/kenan-tas-279793442" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-950/60 hover:bg-blue-900/80 border border-blue-800/70 text-xs font-semibold text-blue-200 transition-all shadow-sm">
               <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              <span>Founder LinkedIn Profile &bull; Kenan Tas</span>
+              <span data-i18n="btn_linkedin">Founder LinkedIn Profile &bull; Kenan Tas</span>
             </a>
 
           </div>
@@ -877,9 +894,9 @@
       <div class="max-w-4xl mx-auto px-6">
         
         <div class="text-center mb-16">
-          <span class="text-xs font-mono text-brand-cyan uppercase tracking-widest">TRANSPARENCY & CLARITY</span>
-          <h2 class="text-3xl font-extrabold text-white mt-1">Frequently Asked Questions</h2>
-          <p class="text-slate-400 text-sm mt-2">Answers regarding integrations, compliance, and sandbox deployments.</p>
+          <span class="text-xs font-mono text-brand-cyan uppercase tracking-widest" data-i18n="faq_tag">TRANSPARENCY & CLARITY</span>
+          <h2 class="text-3xl font-extrabold text-white mt-1" data-i18n="faq_headline">Frequently Asked Questions</h2>
+          <p class="text-slate-400 text-sm mt-2" data-i18n="faq_subhead">Answers regarding integrations, compliance, and sandbox deployments.</p>
         </div>
 
         <div class="space-y-4">
@@ -887,10 +904,10 @@
           <!-- FAQ Item 1 -->
           <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
             <button class="w-full text-left p-6 flex justify-between items-center text-white font-semibold text-base focus:outline-none" onclick="toggleFaq(1)">
-              <span>How does Haytool connect to our Amazon or Trendyol store?</span>
+              <span data-i18n="faq_q1">How does Haytool connect to our Amazon or Trendyol store?</span>
               <svg id="faq-chevron-1" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div id="faq-ans-1" class="px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            <div id="faq-ans-1" class="px-6 pb-6 text-sm text-slate-300 leading-relaxed" data-i18n="faq_a1">
               Haytool connects using official partner protocols (Amazon SP-API with LWA authorization, Trendyol Partner API tokens, and Shopify Plus Webhooks). We never ask for primary master passwords. Onboarding takes less than 15 minutes without touching your storefront frontend code.
             </div>
           </div>
@@ -898,10 +915,10 @@
           <!-- FAQ Item 2 -->
           <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
             <button class="w-full text-left p-6 flex justify-between items-center text-white font-semibold text-base focus:outline-none" onclick="toggleFaq(2)">
-              <span>Does Haytool store customer sensitive personal information (PII)?</span>
+              <span data-i18n="faq_q2">Does Haytool store customer sensitive personal information (PII)?</span>
               <svg id="faq-chevron-2" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div id="faq-ans-2" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            <div id="faq-ans-2" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed" data-i18n="faq_a2">
               No. We enforce a zero-PII retention architecture. Inbound queries and delivery information are processed in memory to formulate dispute evidence or inquiry responses, and are immediately flushed. Your customers' data remains fully compliant with KVKK and GDPR regulations.
             </div>
           </div>
@@ -909,10 +926,10 @@
           <!-- FAQ Item 3 -->
           <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
             <button class="w-full text-left p-6 flex justify-between items-center text-white font-semibold text-base focus:outline-none" onclick="toggleFaq(3)">
-              <span>Can our human support team oversee or override AI actions?</span>
+              <span data-i18n="faq_q3">Can our human support team oversee or override AI actions?</span>
               <svg id="faq-chevron-3" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div id="faq-ans-3" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            <div id="faq-ans-3" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed" data-i18n="faq_a3">
               Yes, absolutely. Haytool supports both "Copilot Mode" (drafting recommended responses for human agent one-click review) and "Autonomous Mode" (auto-dispatching verified responses within defined confidence thresholds, e.g., &gt; 98%). You maintain total administrative governance.
             </div>
           </div>
@@ -920,10 +937,10 @@
           <!-- FAQ Item 4 -->
           <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
             <button class="w-full text-left p-6 flex justify-between items-center text-white font-semibold text-base focus:outline-none" onclick="toggleFaq(4)">
-              <span>How soon can we launch a pilot?</span>
+              <span data-i18n="faq_q4">How soon can we launch a pilot?</span>
               <svg id="faq-chevron-4" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div id="faq-ans-4" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+            <div id="faq-ans-4" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed" data-i18n="faq_a4">
               Pilot sandboxes are provisioned within 24 to 48 hours following an initial assessment call. During the pilot period, Haytool operates in read-only audit mode first to compute dispute win rates and benchmark response quality before any live messaging is engaged.
             </div>
           </div>
@@ -943,23 +960,23 @@
           </svg>
         </div>
 
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight" data-i18n="cta_headline">
           Supercharge Your Marketplace Operations
         </h2>
-        <p class="text-slate-300 text-base sm:text-lg mt-4 mb-8 leading-relaxed">
+        <p class="text-slate-300 text-base sm:text-lg mt-4 mb-8 leading-relaxed" data-i18n="cta_desc">
           Join high-volume retailers reducing return dispute losses and answering buyer tickets in seconds with Haytool Commerce.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button onclick="openPilotModal()" class="w-full sm:w-auto px-9 py-4 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98]">
+          <button onclick="openPilotModal()" class="w-full sm:w-auto px-9 py-4 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98]" data-i18n="cta_btn_primary">
             Request Merchant Sandbox
           </button>
-          <a href="mailto:kenan.tas@haytool.online?subject=Haytool%20Pilot%20Inquiry" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-sm transition-all">
+          <a href="mailto:kenan.tas@haytool.online?subject=Haytool%20Pilot%20Inquiry" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-sm transition-all" data-i18n="cta_btn_secondary">
             Email Executive Office
           </a>
         </div>
 
-        <p class="text-xs text-slate-500 mt-6 font-mono">
+        <p class="text-xs text-slate-500 mt-6 font-mono" data-i18n="cta_confidential">
           Strict confidentiality &bull; KVKK / GDPR Compliant &bull; Non-Disclosure Agreement on request
         </p>
 
@@ -987,18 +1004,18 @@
             </div>
             <span class="text-lg font-bold text-white tracking-tight">HAYTOOL COMMERCE</span>
           </div>
-          <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+          <p class="text-xs text-slate-400 max-w-sm leading-relaxed" data-i18n="footer_summary">
             Enterprise-grade autonomous retail AI operations engine. Automating return dispute packages, omnichannel buyer care, and token-cached catalog synchronization.
           </p>
-          <div class="text-[11px] text-slate-500 font-mono">
+          <div class="text-[11px] text-slate-500 font-mono" data-i18n="footer_rd">
             R&D Center: Bilişim Vadisi Teknoloji Geliştirme Bölgesi, Gebze, Kocaeli, TR
           </div>
         </div>
 
         <!-- Direct Contact -->
         <div class="space-y-3">
-          <div class="text-xs font-bold text-white uppercase tracking-wider">Executive Contact</div>
-          <p class="text-slate-400">Founder &amp; CEO: <br><strong class="text-slate-200">Kenan Tas</strong></p>
+          <div class="text-xs font-bold text-white uppercase tracking-wider" data-i18n="footer_contact_title">Executive Contact</div>
+          <p class="text-slate-400"><span data-i18n="footer_founder_lbl">Founder &amp; CEO:</span> <br><strong class="text-slate-200">Kenan Tas</strong></p>
           <p>
             Email: <a href="mailto:kenan.tas@haytool.online" class="text-brand-cyan hover:underline">kenan.tas@haytool.online</a>
           </p>
@@ -1009,21 +1026,21 @@
 
         <!-- Verification & Registry -->
         <div class="space-y-3">
-          <div class="text-xs font-bold text-white uppercase tracking-wider">Public Records</div>
+          <div class="text-xs font-bold text-white uppercase tracking-wider" data-i18n="footer_public_title">Public Records</div>
           <ul class="space-y-2">
             <li>
               <a href="https://www.crunchbase.com/organization/haytool-commerce" target="_blank" rel="noopener noreferrer" class="hover:text-brand-cyan transition-colors flex items-center gap-1.5">
-                <span>&rarr; Crunchbase Registry</span>
+                <span data-i18n="footer_link_crunchbase">&rarr; Crunchbase Registry</span>
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/kenan-tas-279793442" target="_blank" rel="noopener noreferrer" class="hover:text-brand-cyan transition-colors flex items-center gap-1.5">
-                <span>&rarr; LinkedIn Founder Profile</span>
+                <span data-i18n="footer_link_linkedin">&rarr; LinkedIn Founder Profile</span>
               </a>
             </li>
             <li>
               <a href="#verification" class="hover:text-brand-cyan transition-colors flex items-center gap-1.5">
-                <span>&rarr; Official Corporate Details</span>
+                <span data-i18n="footer_link_corp">&rarr; Official Corporate Details</span>
               </a>
             </li>
           </ul>
@@ -1034,12 +1051,12 @@
       <!-- Copyright & Compliance Disclaimer -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-[11px] gap-4">
         <div>
-          &copy; 2024–2026 Haytool Commerce. All rights reserved.
+          &copy; 2024–2026 Haytool Commerce. <span data-i18n="footer_rights">All rights reserved.</span>
         </div>
         <div class="flex items-center space-x-6 font-medium">
-          <span>KVKK / GDPR Isolated</span>
-          <span>Zero PII Retention</span>
-          <span>Terms of Service</span>
+          <span data-i18n="footer_badge_kvkk">KVKK / GDPR Isolated</span>
+          <span data-i18n="footer_badge_pii">Zero PII Retention</span>
+          <span data-i18n="footer_badge_terms">Terms of Service</span>
         </div>
       </div>
 
@@ -1055,24 +1072,24 @@
       </button>
 
       <div class="mb-6">
-        <span class="text-xs font-mono text-brand-cyan uppercase tracking-wider">CONFIDENTIAL SANDBOX</span>
-        <h3 class="text-2xl font-bold text-white mt-1">Request Merchant Pilot</h3>
-        <p class="text-xs text-slate-400 mt-1">Experience Haytool on your store catalog under NDA.</p>
+        <span class="text-xs font-mono text-brand-cyan uppercase tracking-wider" data-i18n="modal_tag">CONFIDENTIAL SANDBOX</span>
+        <h3 class="text-2xl font-bold text-white mt-1" data-i18n="modal_headline">Request Merchant Pilot</h3>
+        <p class="text-xs text-slate-400 mt-1" data-i18n="modal_subhead">Experience Haytool on your store catalog under NDA.</p>
       </div>
 
       <form id="pilot-form" onsubmit="handlePilotSubmit(event)" class="space-y-4">
         <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-name">Your Full Name &amp; Title</label>
-          <input type="text" id="merchant-name" required placeholder="e.g. John Doe, Head of Operations" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
+          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-name" data-i18n="modal_lbl_name">Your Full Name &amp; Title</label>
+          <input type="text" id="merchant-name" required placeholder="e.g. John Doe, Head of Operations" data-i18n-placeholder="modal_ph_name" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
         </div>
 
         <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-email">Work Email</label>
-          <input type="email" id="merchant-email" required placeholder="name@company.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
+          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-email" data-i18n="modal_lbl_email">Work Email</label>
+          <input type="email" id="merchant-email" required placeholder="name@company.com" data-i18n-placeholder="modal_ph_email" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
         </div>
 
         <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-channels">Primary Marketplace Channels</label>
+          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-channels" data-i18n="modal_lbl_channels">Primary Marketplace Channels</label>
           <select id="merchant-channels" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
             <option value="Amazon + Trendyol">Amazon + Trendyol</option>
             <option value="Trendyol + Hepsiburada">Trendyol + Hepsiburada</option>
@@ -1082,7 +1099,7 @@
         </div>
 
         <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-volume">Approximate Monthly Orders</label>
+          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-volume" data-i18n="modal_lbl_volume">Approximate Monthly Orders</label>
           <select id="merchant-volume" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
             <option value="1,000 - 5,000 orders/mo">1,000 - 5,000 orders/mo</option>
             <option value="5,000 - 20,000 orders/mo" selected>5,000 - 20,000 orders/mo</option>
@@ -1090,21 +1107,475 @@
           </select>
         </div>
 
-        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan mt-2">
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan mt-2" data-i18n="modal_btn_submit">
           Submit Pilot Request
         </button>
       </form>
 
       <!-- Toast Feedback -->
-      <div id="modal-toast" class="hidden mt-4 p-3 rounded-xl bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs text-center font-medium">
+      <div id="modal-toast" class="hidden mt-4 p-3 rounded-xl bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs text-center font-medium" data-i18n="modal_toast_msg">
         &check; Request received! Opening direct email draft with the Founder...
       </div>
 
     </div>
   </div>
 
-  <!-- Interactive Logic Script -->
+  <!-- Interactive Logic & i18n Script -->
   <script>
+    // i18n Translation Dictionary
+    const translations = {
+      en: {
+        meta_title: "Haytool Commerce | Autonomous Omnichannel Retail Operations & AI Engine",
+        meta_desc: "Haytool Commerce automates high-volume retail operations, marketplace return disputes, and customer support across Amazon, Trendyol, Hepsiburada, and Shopify in real time.",
+        top_operational: "All Systems Operational",
+        top_engine: "Active Multi-Tenant Operations Engine v2.4",
+        top_cert: "Bilişim Vadisi R&D Certified →",
+        brand_tagline: "AUTONOMOUS RETAIL AI",
+        nav_platform: "Platform",
+        nav_cockpit: "Live Cockpit",
+        nav_cockpit_full: "Live Cockpit Telemetry",
+        badge_live: "LIVE",
+        nav_integrations: "Integrations",
+        nav_integrations_full: "Marketplace Integrations",
+        nav_calculator: "ROI Calculator",
+        nav_calculator_full: "ROI Savings Calculator",
+        nav_verification: "Verification",
+        nav_verification_full: "Corporate Verification",
+        nav_faq: "FAQ",
+        nav_faq_full: "Frequently Asked Questions",
+        btn_contact_founder: "Contact Founder",
+        btn_request_pilot: "Request Pilot Access",
+        hero_pill: "Autonomous Omnichannel Engine • Zero PII Retention",
+        hero_title_1: "Omnichannel Retail Operations",
+        hero_title_2: "Driven by Autonomous AI",
+        hero_desc: "Haytool connects Amazon, Trendyol, Hepsiburada, and Shopify into a unified real-time operations engine. Resolve customer inquiries, marketplace return disputes, and logistics discrepancies in seconds — while shielding your seller rating.",
+        hero_cta_primary: "Schedule Merchant Pilot",
+        hero_cta_secondary: "Inspect Live Stream",
+        trust_bilisim: "Bilişim Vadisi Technopark R&D",
+        trust_no_code: "No API Code Changes Needed",
+        trust_encryption: "End-to-End Encryption",
+        cockpit_streaming: "STREAMING",
+        ticker_1_tag: "AMAZON DISPUTE",
+        ticker_1_time: "Just now",
+        ticker_1_desc: "Return claim #AMZ-4029: Disputed item weight mismatch",
+        ticker_1_action: "✓ Matched warehouse departure photo + Yurtiçi tracking",
+        ticker_1_metric: "+840 ₺ Saved",
+        ticker_2_tag: "TRENDYOL QUESTION",
+        ticker_2_time: "12s ago",
+        ticker_2_desc: "Buyer Query: \"Does this size fit standard EU 42?\"",
+        ticker_2_action: "✓ Catalog prompt cached: Responded in 1.4s",
+        ticker_2_metric: "100% Policy Pass",
+        ticker_3_tag: "SHOPIFY × HEPSİBURADA",
+        ticker_3_time: "45s ago",
+        ticker_3_desc: "Inventory synchronization across 1,840 SKUs",
+        ticker_3_action: "✓ Stock buffer locked • Prevented overselling",
+        ticker_3_metric: "0 Latency",
+        cockpit_channels: 'Active Channels: <strong class="text-white">5 Marketplaces</strong>',
+        cockpit_latency: 'Avg Latency: <strong class="text-emerald-400">88ms</strong>',
+        metric_1_title: "Resolution Time Drop",
+        metric_1_desc: "Automatic escalation and grounded evidence bundling.",
+        metric_2_title: "Median Turnaround",
+        metric_2_desc: "Buyer inquiry to verified resolution across all channels.",
+        metric_3_title: "Store CSAT Rating",
+        metric_3_desc: "Maintains peak seller metrics on Amazon Buy Box & Trendyol.",
+        metric_4_val: "Zero PII",
+        metric_4_title: "Customer Privacy First",
+        metric_4_desc: "Ephemeral memory processing compliant with GDPR & KVKK.",
+        platform_tag: "ENGINEERED ARCHITECTURE",
+        platform_headline: "Comprehensive Automation for High-Velocity Merchants",
+        platform_subhead: "Four specialized modules working synchronously to handle retail volume spikes without expanding headcounts.",
+        tab_1_btn: "01. Autonomous Dispute Engine",
+        tab_2_btn: "02. Context-Aware Inquiries",
+        tab_3_btn: "03. Token-Cached Catalog",
+        tab_4_btn: "04. Marketplace Metric Shield",
+        mod_1_tag: "Module 01 • Loss Prevention",
+        mod_1_title: "Autonomous Dispute & Return Package Resolution",
+        mod_1_desc: "Disputed returns represent one of the biggest profit drains for omnichannel merchants. Haytool's Dispute Engine retrieves carrier proof-of-delivery timestamps, weight stamps from your 3PL, and matches them directly with the marketplace return policy.",
+        mod_1_point_1: "Automated generation of claim dossiers for Amazon SAFE-T and Trendyol İtiraz.",
+        mod_1_point_2: "Barcode weight triangulation stops claims on empty or substituted boxes.",
+        mod_1_point_3: "Recovers up to 68% of lost inventory costs without manual clerical hours.",
+        status_validated: "VALIDATED",
+        lbl_order_id: "Order ID:",
+        lbl_carrier_scan: "Carrier Scan:",
+        lbl_weight: "Departure Weight:",
+        lbl_returned: "Returned Box:",
+        mod_1_log: "> AI Action: Auto-submitted photographic discrepancy proof to Marketplace Arbitration Board with invoice attachment.",
+        mod_2_tag: "Module 02 • Customer Care Copilot",
+        mod_2_title: "Context-Aware Omnichannel Inquiries",
+        mod_2_desc: "Standard chatbots fail because they lack real-time context about buyer history, specific SKU compatibility, and live carrier transit status. Haytool continuously aggregates catalog attributes and carrier events to construct accurate answers instantly.",
+        mod_2_point_1: "Multilingual support across Turkish, English, German, and Arabic.",
+        mod_2_point_2: "Direct carrier webhook lookup: answers \"Where is my shipment?\" in under 2 seconds.",
+        mod_2_point_3: "Adheres strictly to marketplace communication rules to prevent seller account penalties.",
+        mod_2_msg_in: "Buyer (Trendyol): \"Siparişim kargoya verildi mi? Yarın elimde olur mu?\"",
+        mod_2_msg_out: "> Haytool AI: \"Merhaba! Siparişiniz bugün saat 15:30'da Aras Kargo Gebze Şubesi'nden yola çıkmıştır (Takip No: 28491823). Teslimat adresinize göre yarın saat 12:00–16:00 arasında teslim edilmesi planlanmaktadır.\"",
+        mod_3_tag: "Module 03 • Deep Inference Caching",
+        mod_3_title: "Prompt Caching & High-Density SKU Index",
+        mod_3_desc: "When catalog sizes exceed 50,000 SKUs, standard LLM queries become slow and cost-prohibitive. Haytool structures catalog specs into cached contextual embeddings, keeping token costs down by 80% while enabling sub-second inferences during peak shopping events.",
+        mod_3_point_1: "Zero latency degradation during Black Friday and Cyber Week surges.",
+        mod_3_point_2: "Real-time price & stock reconciliation between marketplaces and ERPs.",
+        lbl_indexed_catalog: "Indexed Catalog:",
+        lbl_cached_tokens: "Cached Prompt Tokens:",
+        lbl_resp_time: "Inference Response Time:",
+        mod_4_tag: "Module 04 • Account Defense",
+        mod_4_title: "Marketplace Metric Shield",
+        mod_4_desc: "Late Dispatch Rate (LDR), Order Defect Rate (ODR), and Unanswered Messages can cause temporary or permanent marketplace suspensions. The Metric Shield proactively tracks SLAs and routes urgent tickets to automated emergency workflows.",
+        mod_4_point_1: "Amazon Buy Box & Trendyol Mağaza Puanı protection.",
+        mod_4_point_2: "Automated carrier tracking notifications prevent anxious customer inquiries before they arise.",
+        status_health: "100% HEALTH",
+        shield_lbl_odr: "Amazon Order Defect Rate (ODR):",
+        shield_lbl_ty: "Trendyol Cevaplama Süresi:",
+        shield_lbl_hb: "Hepsiburada Zamanında Kargolama:",
+        int_tag: "ECOSYSTEM SYNC",
+        int_headline: "Direct Connectors for Leading Marketplaces",
+        int_desc: "Plug Haytool directly into your active channels with pre-built authorized API integrations. Zero webhook infrastructure required from your engineering team.",
+        int_sub_rest: "Rest • Bi-directional",
+        int_sub_realtime: "Webhooks • Realtime",
+        int_sub_merchant: "Merchant API",
+        int_sub_graphql: "GraphQL • Webhooks",
+        int_sub_vendor: "Vendor API",
+        int_sub_carriers: "Carriers & ERP",
+        calc_tag: "PROVABLE ROI",
+        calc_headline: "Estimate Your Monthly Operational Savings",
+        calc_subhead: "Adjust your estimated monthly order volume across all marketplace channels.",
+        calc_slider_lbl: "Monthly Marketplace Orders:",
+        calc_min: "1,000 orders",
+        calc_max: "100,000 orders",
+        calc_card_1_title: "Disputes Automated / mo",
+        calc_card_1_sub: "± 68% Win Rate",
+        calc_card_2_title: "Agent Hours Saved",
+        calc_card_2_sub: "~1.2 FTE Equivalent",
+        calc_card_3_title: "Projected Monthly Savings",
+        calc_card_3_sub: "Returns + Support Overhead",
+        calc_cta: "Unlock These Savings • Request Pilot",
+        verif_tag: "OFFICIALLY REGISTERED ENTITY",
+        verif_headline: "Haytool Commerce Corporate Record",
+        verif_badge: "Active • Good Standing",
+        corp_lbl_legal: "Legal Entity / Trademark",
+        corp_val_scope: "Retail AI & Automation",
+        corp_lbl_founder: "Founder & Executive",
+        corp_val_title: "Founder & Chief Executive Officer",
+        corp_lbl_hq: "R&D Headquarters",
+        corp_lbl_reg: "Registry Inception",
+        corp_val_reg: "Active Operations",
+        corp_lbl_email: "Executive Work Email",
+        corp_val_email: "Direct inquiries",
+        corp_lbl_tel: "Direct Telephony",
+        corp_val_tel: "Headquarters switchboard",
+        btn_crunchbase: "Verify on Crunchbase Database",
+        btn_linkedin: "Founder LinkedIn Profile • Kenan Tas",
+        faq_tag: "TRANSPARENCY & CLARITY",
+        faq_headline: "Frequently Asked Questions",
+        faq_subhead: "Answers regarding integrations, compliance, and sandbox deployments.",
+        faq_q1: "How does Haytool connect to our Amazon or Trendyol store?",
+        faq_a1: "Haytool connects using official partner protocols (Amazon SP-API with LWA authorization, Trendyol Partner API tokens, and Shopify Plus Webhooks). We never ask for primary master passwords. Onboarding takes less than 15 minutes without touching your storefront frontend code.",
+        faq_q2: "Does Haytool store customer sensitive personal information (PII)?",
+        faq_a2: "No. We enforce a zero-PII retention architecture. Inbound queries and delivery information are processed in memory to formulate dispute evidence or inquiry responses, and are immediately flushed. Your customers' data remains fully compliant with KVKK and GDPR regulations.",
+        faq_q3: "Can our human support team oversee or override AI actions?",
+        faq_a3: "Yes, absolutely. Haytool supports both \"Copilot Mode\" (drafting recommended responses for human agent one-click review) and \"Autonomous Mode\" (auto-dispatching verified responses within defined confidence thresholds, e.g., > 98%). You maintain total administrative governance.",
+        faq_q4: "How soon can we launch a pilot?",
+        faq_a4: "Pilot sandboxes are provisioned within 24 to 48 hours following an initial assessment call. During the pilot period, Haytool operates in read-only audit mode first to compute dispute win rates and benchmark response quality before any live messaging is engaged.",
+        cta_headline: "Supercharge Your Marketplace Operations",
+        cta_desc: "Join high-volume retailers reducing return dispute losses and answering buyer tickets in seconds with Haytool Commerce.",
+        cta_btn_primary: "Request Merchant Sandbox",
+        cta_btn_secondary: "Email Executive Office",
+        cta_confidential: "Strict confidentiality • KVKK / GDPR Compliant • Non-Disclosure Agreement on request",
+        footer_summary: "Enterprise-grade autonomous retail AI operations engine. Automating return dispute packages, omnichannel buyer care, and token-cached catalog synchronization.",
+        footer_rd: "R&D Center: Bilişim Vadisi Teknoloji Geliştirme Bölgesi, Gebze, Kocaeli, TR",
+        footer_contact_title: "Executive Contact",
+        footer_founder_lbl: "Founder & CEO:",
+        footer_public_title: "Public Records",
+        footer_link_crunchbase: "→ Crunchbase Registry",
+        footer_link_linkedin: "→ LinkedIn Founder Profile",
+        footer_link_corp: "→ Official Corporate Details",
+        footer_rights: "All rights reserved.",
+        footer_badge_kvkk: "KVKK / GDPR Isolated",
+        footer_badge_pii: "Zero PII Retention",
+        footer_badge_terms: "Terms of Service",
+        modal_tag: "CONFIDENTIAL SANDBOX",
+        modal_headline: "Request Merchant Pilot",
+        modal_subhead: "Experience Haytool on your store catalog under NDA.",
+        modal_lbl_name: "Your Full Name & Title",
+        modal_ph_name: "e.g. John Doe, Head of Operations",
+        modal_lbl_email: "Work Email",
+        modal_ph_email: "name@company.com",
+        modal_lbl_channels: "Primary Marketplace Channels",
+        modal_lbl_volume: "Approximate Monthly Orders",
+        modal_btn_submit: "Submit Pilot Request",
+        modal_toast_msg: "✓ Request received! Opening direct email draft with the Founder..."
+      },
+      tr: {
+        meta_title: "Haytool Commerce | Otonom Çok Kanallı Perakende Operasyonları & AI Motoru",
+        meta_desc: "Haytool Commerce; Amazon, Trendyol, Hepsiburada ve Shopify mağazalarınızdaki iade itirazlarını, müşteri sorularını ve kargo süreçlerini gerçek zamanlı olarak otomatikleştirir.",
+        top_operational: "Tüm Sistemler Operasyonel",
+        top_engine: "Aktif Çok Kiracılı Operasyon Motoru v2.4",
+        top_cert: "Bilişim Vadisi Ar-Ge Onaylı →",
+        brand_tagline: "OTONOM PERAKENDE YAPAY ZEKASI",
+        nav_platform: "Platform",
+        nav_cockpit: "Canlı Kokpit",
+        nav_cockpit_full: "Canlı Telemetri Kokpiti",
+        badge_live: "CANLI",
+        nav_integrations: "Entegrasyonlar",
+        nav_integrations_full: "Pazaryeri Entegrasyonları",
+        nav_calculator: "Tasarruf Hesabı",
+        nav_calculator_full: "ROI Tasarruf Hesaplayıcı",
+        nav_verification: "Kurumsal Sicil",
+        nav_verification_full: "Kurumsal Kimlik ve Doğrulama",
+        nav_faq: "S.S.S.",
+        nav_faq_full: "Sıkça Sorulan Sorular",
+        btn_contact_founder: "Kurucuyla İletişim",
+        btn_request_pilot: "Pilot Talebi Oluştur",
+        hero_pill: "Otonom Çok Kanallı Motor • Sıfır PII Saklama",
+        hero_title_1: "Çok Kanallı Perakende Operasyonları",
+        hero_title_2: "Otonom Yapay Zeka ile Güçlendirildi",
+        hero_desc: "Haytool; Amazon, Trendyol, Hepsiburada ve Shopify mağazalarınızı tek bir gerçek zamanlı operasyon merkezinde birleştirir. Alıcı sorularını, haksız iade itirazlarını ve lojistik sorunlarını saniyeler içinde çözerken mağaza puanınızı korur.",
+        hero_cta_primary: "Mağaza Pilotu Başlat",
+        hero_cta_secondary: "Canlı Akışı İncele",
+        trust_bilisim: "Bilişim Vadisi Teknopark Ar-Ge",
+        trust_no_code: "Kod Değişikliği Gerektirmez",
+        trust_encryption: "Uçtan Uca Şifreleme",
+        cockpit_streaming: "CANLI AKIŞ",
+        ticker_1_tag: "AMAZON İADE İTİRAZI",
+        ticker_1_time: "Az önce",
+        ticker_1_desc: "İade Talebi #AMZ-4029: Haksız ürün ağırlık uyuşmazlığı",
+        ticker_1_action: "✓ Depo çıkış fotoğrafı + Yurtiçi Kargo desisi eşleştirildi",
+        ticker_1_metric: "+840 ₺ Kurtarıldı",
+        ticker_2_tag: "TRENDYOL SORUSU",
+        ticker_2_time: "12 sn önce",
+        ticker_2_desc: "Müşteri Sorusu: \"Kalıplar dar mı, 42 numara için hangisini almalıyım?\"",
+        ticker_2_action: "✓ Önbellek SKU analizi: 1.4 sn içinde yanıtlandı",
+        ticker_2_metric: "100% Kural Geçerli",
+        ticker_3_tag: "SHOPIFY × HEPSİBURADA",
+        ticker_3_time: "45 sn önce",
+        ticker_3_desc: "1.840 SKU için çapraz stok ve fiyat eşitlemesi",
+        ticker_3_action: "✓ Güvenlik stoğu kilitlendi • Çift satış engellendi",
+        ticker_3_metric: "0 Gecikme",
+        cockpit_channels: 'Aktif Kanallar: <strong class="text-white">5 Pazaryeri</strong>',
+        cockpit_latency: 'Ort. Gecikme: <strong class="text-emerald-400">88ms</strong>',
+        metric_1_title: "Çözüm Süresi Düşüşü",
+        metric_1_desc: "Otomatik eskalasyon ve kanıt dosyası oluşturma.",
+        metric_2_title: "Ortalama Yanıt Hızı",
+        metric_2_desc: "Müşteri sorusundan doğrulanmış çözüme tüm kanallarda.",
+        metric_3_title: "Mağaza CSAT Puanı",
+        metric_3_desc: "Amazon Buy Box ve Trendyol mağaza puanını zirvede tutar.",
+        metric_4_val: "Sıfır PII",
+        metric_4_title: "Müşteri Gizliliği Önceliği",
+        metric_4_desc: "KVKK ve GDPR uyumlu geçici bellek mimarisi.",
+        platform_tag: "MÜHENDİSLİK MİMARİSİ",
+        platform_headline: "Yüksek Hacimli Satıcılar İçin Kapsamlı Otomasyon",
+        platform_subhead: "Personel maliyetini artırmadan kampanya yoğunluklarını yöneten dört uzmanlaşmış operasyon modülü.",
+        tab_1_btn: "01. Otonom İtiraz Motoru",
+        tab_2_btn: "02. Kontekst Destekli İletişim",
+        tab_3_btn: "03. Token-Önbellekli Katalog",
+        tab_4_btn: "04. Pazaryeri Metrik Kalkanı",
+        mod_1_tag: "Modül 01 • Kayıp Önleme",
+        mod_1_title: "Otonom İtiraz & İade Paketi Doğrulama",
+        mod_1_desc: "Haksız iadeler e-ticaret satıcılarının en büyük kâr kayıplarından biridir. Haytool İtiraz Motoru; kargo teslim kayıtlarını, deponuzdaki tartım/fotoğraf verilerini toplar ve pazaryeri iade politikalarıyla otomatik eşleştirerek itiraz dosyası hazırlar.",
+        mod_1_point_1: "Amazon SAFE-T ve Trendyol Satıcı İtirazları için hazır kanıt paketi oluşturur.",
+        mod_1_point_2: "Barkod ve desi kontrolüyle boş veya kullanılmış ürün iadelerine itiraz eder.",
+        mod_1_point_3: "Manuel işlem yapmadan haksız iadelerin %68'e varan oranını geri kazandırır.",
+        status_validated: "DOĞRULANDI",
+        lbl_order_id: "Sipariş No:",
+        lbl_carrier_scan: "Kargo Taraması:",
+        lbl_weight: "Çıkış Ağırlığı:",
+        lbl_returned: "İade Gelen Kutu:",
+        mod_1_log: "> Yapay Zeka Aksiyonu: Desi uyuşmazlığı ve fatura görseli Pazaryeri Hakem Heyetine otomatik iletildi.",
+        mod_2_tag: "Modül 02 • Müşteri Hizmetleri Asistanı",
+        mod_2_title: "Kontekst ve Sipariş Bilinçli Müşteri Yanıtları",
+        mod_2_desc: "Geleneksel botlar, alıcının geçmişini, ürün özelliklerini ve canlı kargo hareketlerini bilmediği için başarısız olur. Haytool, ürün özellikleri ve kargo durumunu gerçek zamanlı sentezleyerek anında kesin ve doğru cevaplar verir.",
+        mod_2_point_1: "Türkçe, İngilizce, Almanca ve Arapça dillerinde kusursuz destek.",
+        mod_2_point_2: "Doğrudan kargo takip sorgusu: \"Kargom nerede?\" sorusunu 2 saniye altında yanıtlar.",
+        mod_2_point_3: "Pazaryeri iletişim kurallarına tam uyum sağlayarak hesap puanınızı korur.",
+        mod_2_msg_in: "Müşteri (Trendyol): \"Siparişim kargoya verildi mi? Yarın elimde olur mu?\"",
+        mod_2_msg_out: "> Haytool AI: \"Merhaba! Siparişiniz bugün saat 15:30'da Aras Kargo Gebze Şubesi'nden yola çıkmıştır (Takip No: 28491823). Teslimat adresinize göre yarın saat 12:00–16:00 arasında teslim edilmesi planlanmaktadır.\"",
+        mod_3_tag: "Modül 03 • Derin Önbellekleme",
+        mod_3_title: "Prompt Önbellekleme & Geniş SKU İndeksi",
+        mod_3_desc: "Katalog hacmi 50.000 SKU'yu aştığında klasik modeller yavaşlar ve maliyetli hale gelir. Haytool, ürün kataloğunuzu önbelleğe alınmış bağlamsal vektörlerde saklar; Kasım indirimleri ve flaş kampanyalarda token maliyetini %80 düşürürken milisaniyelik hız sunar.",
+        mod_3_point_1: "Efsane Cuma ve yoğun kampanya dönemlerinde sıfır gecikme.",
+        mod_3_point_2: "Pazaryerleri ve ERP sistemleri arasında anlık stok & fiyat uzlaştırması.",
+        lbl_indexed_catalog: "İndekslenen Katalog:",
+        lbl_cached_tokens: "Önbellekteki Token:",
+        lbl_resp_time: "Model Yanıt Süresi:",
+        mod_4_tag: "Modül 04 • Mağaza Güvenliği",
+        mod_4_title: "Pazaryeri Sağlık & Metrik Kalkanı",
+        mod_4_desc: "Geç Gönderim Oranı (LDR), Kusurlu Sipariş Oranı (ODR) ve cevaplanmayan mesajlar mağaza askıya alınmalarına yol açabilir. Metrik Kalkanı, SLA sürelerini izler ve acil bildirimleri anında otonom iş akışlarına yönlendirir.",
+        mod_4_point_1: "Amazon Buy Box ve Trendyol Mağaza Puanı koruması.",
+        mod_4_point_2: "Otomatik kargo bilgilendirmeleri sayesinde alıcı endişelerini oluşmadan çözer.",
+        status_health: "100% SAĞLIKLI",
+        shield_lbl_odr: "Amazon Kusurlu Sipariş Oranı (ODR):",
+        shield_lbl_ty: "Trendyol Soru Cevaplama Süresi:",
+        shield_lbl_hb: "Hepsiburada Zamanında Kargolama:",
+        int_tag: "EKOSİSTEM SENKRONİZASYONU",
+        int_headline: "Lider Pazaryerleri İçin Doğrudan Bağlayıcılar",
+        int_desc: "Haytool'u hazır resmi API bağlantılarıyla dakikalar içinde mağazalarınıza bağlayın. Yazılım ekibinizden webhook altyapısı kurması gerekmez.",
+        int_sub_rest: "REST • Çift Yönlü",
+        int_sub_realtime: "Webhook • Gerçek Zamanlı",
+        int_sub_merchant: "Satıcı API",
+        int_sub_graphql: "GraphQL • Webhook",
+        int_sub_vendor: "Tedarikçi API",
+        int_sub_carriers: "Kargo & ERP",
+        calc_tag: "KANITLANABİLİR TASARRUF",
+        calc_headline: "Aylık Operasyonel Tasarrufunuzu Hesaplayın",
+        calc_subhead: "Tüm pazaryerlerindeki toplam aylık sipariş hacminizi seçin.",
+        calc_slider_lbl: "Aylık Toplam Mağaza Siparişi:",
+        calc_min: "1.000 sipariş",
+        calc_max: "100.000 sipariş",
+        calc_card_1_title: "Otomatik İtiraz Sayısı / ay",
+        calc_card_1_sub: "± %68 Kazanım Oranı",
+        calc_card_2_title: "Kazanılan Personel Saati",
+        calc_card_2_sub: "~1.2 Tam Zamanlı Eşdeğeri",
+        calc_card_3_title: "Tahmini Aylık Tasarruf",
+        calc_card_3_sub: "İade Kurtarımı + Destek Gideri",
+        calc_cta: "Bu Tasarrufu Başlatın • Pilot Talebi",
+        verif_tag: "RESMİ KAYITLI ŞİRKET",
+        verif_headline: "Haytool Commerce Şirket Bilgileri",
+        verif_badge: "Aktif • Faal Durumda",
+        corp_lbl_legal: "Tüzel Kişilik / Marka",
+        corp_val_scope: "Perakende Yapay Zekası & Otomasyon",
+        corp_lbl_founder: "Kurucu & Yönetici",
+        corp_val_title: "Kurucu & İcra Kurulu Başkanı (CEO)",
+        corp_lbl_hq: "Ar-Ge Genel Merkezi",
+        corp_lbl_reg: "Kuruluş Tarihi",
+        corp_val_reg: "Aktif Faaliyet",
+        corp_lbl_email: "Kurumsal E-posta",
+        corp_val_email: "Doğrudan iletişim",
+        corp_lbl_tel: "Telefon",
+        corp_val_tel: "Genel Merkez Santrali",
+        btn_crunchbase: "Crunchbase Veritabanında Doğrula",
+        btn_linkedin: "Kurucu LinkedIn Profili • Kenan Taş",
+        faq_tag: "ŞEFFAFLIK & GÜVEN",
+        faq_headline: "Sıkça Sorulan Sorular",
+        faq_subhead: "Entegrasyonlar, veri gizliliği ve pilot süreçleri hakkında yanıtlar.",
+        faq_q1: "Haytool mağazamıza (Amazon, Trendyol) nasıl bağlanır?",
+        faq_a1: "Haytool, resmi partner API protokolleri (Amazon SP-API LWA yetkilendirmesi, Trendyol Partner API anahtarları, Shopify Plus Webhook'ları) ile bağlanır. Asla ana şifrenizi talep etmeyiz. Kurulum, mağaza kodunuza dokunmadan 15 dakikada tamamlanır.",
+        faq_q2: "Haytool müşterilerimizin kişisel verilerini (KVKK) saklar mı?",
+        faq_a2: "Hayır. Sıfır PII (Kişisel Veri Saklamama) mimarisiyle çalışıyoruz. Gelen soru veya teslimat verileri yalnızca itiraz kanıtı veya cevap üretimi esnasında geçici bellekte işlenir ve ardından silinir. Verileriniz KVKK ve GDPR yönetmeliklerine %100 uygundur.",
+        faq_q3: "Destek ekibimiz yapay zekanın işlemlerini denetleyebilir mi?",
+        faq_a3: "Kesinlikle evet. Haytool hem \"Copilot Modu\" (önerilen cevabı müşteri temsilcisinin onayına sunma) hem de \"Otonom Mod\" (belirlenen güven eşiğinin üzerindeki cevapları doğrudan iletme) seçeneklerini sunar. Tam idari kontrol sizdedir.",
+        faq_q4: "Pilot programına ne kadar sürede başlayabiliriz?",
+        faq_a4: "İlk değerlendirme görüşmesinin ardından 24-48 saat içinde özel sandbox ortamınız hazırlanır. Pilot döneminde sistem önce salt-okunur (read-only) analiz modunda çalışarak kazanım oranını ölçer, ardından canlıya alınır.",
+        cta_headline: "Pazaryeri Operasyonlarınızı Hızlandırın",
+        cta_desc: "Haksız iade kayıplarını azaltan ve alıcı sorularını saniyeler içinde çözen yüksek hacimli satıcıların arasına katılın.",
+        cta_btn_primary: "Mağaza Pilotu Başlat",
+        cta_btn_secondary: "Yönetici Ofisiyle İletişim",
+        cta_confidential: "Tam gizlilik • KVKK / GDPR Uyumlu • Talep üzerine Gizlilik Sözleşmesi (NDA)",
+        footer_summary: "Kurumsal düzeyde otonom e-ticaret yapay zeka operasyon motoru. İade itiraz paketleri, çok kanallı alıcı desteği ve önbellekli katalog senkronizasyonu.",
+        footer_rd: "Ar-Ge Merkezi: Bilişim Vadisi Teknoloji Geliştirme Bölgesi, Gebze, Kocaeli, TR",
+        footer_contact_title: "Yönetim & İletişim",
+        footer_founder_lbl: "Kurucu & CEO:",
+        footer_public_title: "Resmi Kayıtlar",
+        footer_link_crunchbase: "→ Crunchbase Şirket Kaydı",
+        footer_link_linkedin: "→ Kurucu LinkedIn Profili",
+        footer_link_corp: "→ Resmi Kurumsal Sicil",
+        footer_rights: "Tüm hakları saklıdır.",
+        footer_badge_kvkk: "KVKK / GDPR İzolasyonu",
+        footer_badge_pii: "Sıfır PII Saklama",
+        footer_badge_terms: "Hizmet Şartları",
+        modal_tag: "GİZLİ SANDBOX ORTAMI",
+        modal_headline: "Mağaza Pilotu Talebi",
+        modal_subhead: "Haytool'u kendi mağaza kataloğunuzda NDA kapsamında deneyimleyin.",
+        modal_lbl_name: "Adınız Soyadınız & Unvanınız",
+        modal_ph_name: "Örn: Kenan Taş, Operasyon Direktörü",
+        modal_lbl_email: "Kurumsal E-posta",
+        modal_ph_email: "isim@sirket.com",
+        modal_lbl_channels: "Öncelikli Pazaryeri Kanallarınız",
+        modal_lbl_volume: "Aylık Yaklaşık Sipariş Adediniz",
+        modal_btn_submit: "Pilot Talebini Gönder",
+        modal_toast_msg: "✓ Talebiniz alındı! Kurucu ile doğrudan e-posta taslağı açılıyor..."
+      }
+    };
+
+    // Current Active Language (Default 'en', can load from localStorage or ?lang= param)
+    let currentLang = 'en';
+
+    function initLanguage() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlLang = urlParams.get('lang');
+      const savedLang = localStorage.getItem('haytool_lang');
+
+      if (urlLang === 'tr' || urlLang === 'en') {
+        currentLang = urlLang;
+      } else if (savedLang === 'tr' || savedLang === 'en') {
+        currentLang = savedLang;
+      } else {
+        currentLang = 'en'; // Strict default
+      }
+
+      applyLanguage(currentLang);
+    }
+
+    function setLanguage(lang) {
+      if (lang !== 'en' && lang !== 'tr') return;
+      currentLang = lang;
+      localStorage.setItem('haytool_lang', lang);
+      applyLanguage(lang);
+    }
+
+    function applyLanguage(lang) {
+      document.documentElement.lang = lang;
+      const dict = translations[lang];
+
+      // Update document title and meta
+      if (dict.meta_title) document.title = dict.meta_title;
+      const metaDesc = document.getElementById('meta-desc');
+      if (metaDesc && dict.meta_desc) metaDesc.setAttribute('content', dict.meta_desc);
+
+      // Update text content
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key] !== undefined) {
+          el.textContent = dict[key];
+        }
+      });
+
+      // Update HTML content
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.getAttribute('data-i18n-html');
+        if (dict[key] !== undefined) {
+          el.innerHTML = dict[key];
+        }
+      });
+
+      // Update placeholders
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (dict[key] !== undefined) {
+          el.setAttribute('placeholder', dict[key]);
+        }
+      });
+
+      // Update Switcher Active Button Styles
+      updateSwitcherUI(lang);
+
+      // Re-trigger ROI calculation with translated labels
+      const slider = document.getElementById('order-slider');
+      if (slider) calculateSavings(slider.value);
+    }
+
+    function updateSwitcherUI(lang) {
+      const enBtn = document.getElementById('lang-btn-en');
+      const trBtn = document.getElementById('lang-btn-tr');
+      const mobEn = document.getElementById('mobile-quick-en');
+      const mobTr = document.getElementById('mobile-quick-tr');
+
+      const activeClass = 'px-2.5 py-1 rounded-lg transition-all text-brand-cyan bg-slate-800 font-bold shadow-sm';
+      const inactiveClass = 'px-2.5 py-1 rounded-lg transition-all text-slate-400 hover:text-white';
+
+      const mobActive = 'px-2 py-0.5 rounded text-brand-cyan bg-slate-800 font-bold';
+      const mobInactive = 'px-2 py-0.5 rounded text-slate-400';
+
+      if (lang === 'en') {
+        if (enBtn) enBtn.className = activeClass;
+        if (trBtn) trBtn.className = inactiveClass;
+        if (mobEn) mobEn.className = mobActive;
+        if (mobTr) mobTr.className = mobInactive;
+      } else {
+        if (enBtn) enBtn.className = inactiveClass;
+        if (trBtn) trBtn.className = activeClass;
+        if (mobEn) mobEn.className = mobInactive;
+        if (mobTr) mobTr.className = mobActive;
+      }
+    }
+
     // Tab Switcher
     function switchTab(tabId) {
       const tabs = ['dispute', 'inquiries', 'catalog', 'shield'];
@@ -1139,19 +1610,24 @@
     // ROI Calculator Function
     function calculateSavings(orders) {
       const orderCount = parseInt(orders);
-      document.getElementById('order-count-display').innerText = Number(orderCount).toLocaleString();
+      const display = document.getElementById('order-count-display');
+      if (display) display.innerText = Number(orderCount).toLocaleString(currentLang === 'tr' ? 'tr-TR' : 'en-US');
       
-      // Calculations:
-      // ~3% of orders have return disputes/inquiries
       const disputes = Math.round(orderCount * 0.03);
-      // Each automated dispute & ticket saves ~25 minutes of clerical/support time
       const hoursSaved = Math.round((disputes * 25) / 60);
-      // Financial savings: recovered disputes (~120 TL/claim) + support hours (~150 TL/hr)
       const savings = Math.round((disputes * 120) + (hoursSaved * 160));
 
-      document.getElementById('stat-disputes').innerText = Number(disputes).toLocaleString();
-      document.getElementById('stat-hours').innerText = Number(hoursSaved).toLocaleString() + ' hrs';
-      document.getElementById('stat-savings').innerText = '₺ ' + Number(savings).toLocaleString();
+      const disputesEl = document.getElementById('stat-disputes');
+      const hoursEl = document.getElementById('stat-hours');
+      const savingsEl = document.getElementById('stat-savings');
+
+      if (disputesEl) disputesEl.innerText = Number(disputes).toLocaleString(currentLang === 'tr' ? 'tr-TR' : 'en-US');
+      if (hoursEl) {
+        hoursEl.innerText = Number(hoursSaved).toLocaleString(currentLang === 'tr' ? 'tr-TR' : 'en-US') + (currentLang === 'tr' ? ' saat' : ' hrs');
+      }
+      if (savingsEl) {
+        savingsEl.innerText = '₺ ' + Number(savings).toLocaleString(currentLang === 'tr' ? 'tr-TR' : 'en-US');
+      }
     }
 
     // Pilot Modal Functions
@@ -1174,15 +1650,17 @@
       const toast = document.getElementById('modal-toast');
       toast.classList.remove('hidden');
 
-      // Draft mailto link
-      const subject = encodeURIComponent('Pilot Request: ' + name);
+      const isTr = currentLang === 'tr';
+      const subject = encodeURIComponent((isTr ? 'Pilot Talebi: ' : 'Pilot Request: ') + name);
       const body = encodeURIComponent(
-        'Hello Kenan,\n\nI would like to request sandbox pilot access for Haytool Commerce.\n\n' +
-        'Name: ' + name + '\n' +
-        'Email: ' + email + '\n' +
-        'Channels: ' + channels + '\n' +
-        'Monthly Volume: ' + volume + '\n\n' +
-        'Best regards,'
+        (isTr 
+          ? 'Merhaba Kenan Bey,\n\nHaytool Commerce için mağaza sandbox pilot erişimi talep ediyorum.\n\n'
+          : 'Hello Kenan,\n\nI would like to request sandbox pilot access for Haytool Commerce.\n\n') +
+        (isTr ? 'İsim & Unvan: ' : 'Name: ') + name + '\n' +
+        (isTr ? 'E-posta: ' : 'Email: ') + email + '\n' +
+        (isTr ? 'Pazaryeri Kanalları: ' : 'Channels: ') + channels + '\n' +
+        (isTr ? 'Aylık Sipariş Hacmi: ' : 'Monthly Volume: ') + volume + '\n\n' +
+        (isTr ? 'Saygılarımla,' : 'Best regards,')
       );
 
       setTimeout(() => {
@@ -1193,16 +1671,24 @@
     // Mobile Menu Toggle
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    mobileBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
 
     // Close modal on outside click
-    document.getElementById('pilot-modal').addEventListener('click', (e) => {
-      if (e.target.id === 'pilot-modal') {
-        closePilotModal();
-      }
-    });
+    const modalEl = document.getElementById('pilot-modal');
+    if (modalEl) {
+      modalEl.addEventListener('click', (e) => {
+        if (e.target.id === 'pilot-modal') {
+          closePilotModal();
+        }
+      });
+    }
+
+    // Initialize Language on DOM Load
+    document.addEventListener('DOMContentLoaded', initLanguage);
   </script>
 
 </body>
