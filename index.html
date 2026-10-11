@@ -1,14 +1,143 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haytool Commerce — Omnichannel Retail Automation & AI Support Platform</title>
-  <meta name="description" content="Enterprise e-commerce operations engine. AI return automation, dispute handling, and order synchronization across Amazon, Trendyol, Hepsiburada, and Shopify.">
-  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Primary Meta Tags -->
+  <title>Haytool Commerce | Autonomous Omnichannel Retail Operations & AI Engine</title>
+  <meta name="title" content="Haytool Commerce | Autonomous Omnichannel Retail Operations & AI Engine">
+  <meta name="description" content="Haytool Commerce automates high-volume retail operations, marketplace return disputes, and customer support across Amazon, Trendyol, Hepsiburada, and Shopify in real time.">
+  <meta name="author" content="Kenan Tas">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#090B10">
+  <link rel="canonical" href="https://haytool.online/">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="assets/haytool-logo.jpg">
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://haytool.online/">
+  <meta property="og:site_name" content="Haytool Commerce">
+  <meta property="og:title" content="Haytool Commerce | Autonomous Retail Operations & AI Engine">
+  <meta property="og:description" content="Resolve return disputes, buyer inquiries, and omnichannel carrier logistics in under 90 seconds while safeguarding store CSAT.">
+  <meta property="og:image" content="https://haytool.online/assets/haytool-logo.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Haytool Commerce Official Brand Identity">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://haytool.online/">
+  <meta name="twitter:title" content="Haytool Commerce | Autonomous Retail Operations & AI Engine">
+  <meta name="twitter:description" content="Automate marketplace dispute resolution and customer inquiry workflows across Amazon, Trendyol, and Shopify.">
+  <meta name="twitter:image" content="https://haytool.online/assets/haytool-logo.jpg">
+
+  <!-- Structured Data (JSON-LD) for Search Engines & LLM Citation (AEO / GEO) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://haytool.online/#organization",
+      "name": "Haytool Commerce",
+      "legalName": "Haytool Commerce",
+      "url": "https://haytool.online",
+      "logo": "https://haytool.online/assets/haytool-logo.jpg",
+      "foundingDate": "2024-04-01",
+      "description": "Enterprise-grade AI operations engine automating dispute claims, customer support, and return workflows for omnichannel online merchants.",
+      "founder": {
+        "@type": "Person",
+        "name": "Kenan Tas",
+        "jobTitle": "Founder & CEO",
+        "sameAs": "https://www.linkedin.com/in/kenan-tas-279793442"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/kenan-tas-279793442",
+        "https://www.crunchbase.com/organization/haytool-commerce"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+90-262-678-8040",
+        "contactType": "Executive Office",
+        "email": "kenan.tas@haytool.online",
+        "areaServed": "Global"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bilisim Vadisi Teknoloji Gelistirme Bolgesi",
+        "addressLocality": "Gebze",
+        "addressRegion": "Kocaeli",
+        "postalCode": "41400",
+        "addressCountry": "TR"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Haytool Operations Engine",
+      "operatingSystem": "Cloud-based SaaS",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Enterprise pilot program available upon application"
+      },
+      "creator": {
+        "@id": "https://haytool.online/#organization"
+      },
+      "featureList": [
+        "Autonomous Return & Dispute Resolution",
+        "Context-Aware Omnichannel Buyer Inquiries",
+        "High-Speed Token-Cached Catalog Indexing",
+        "Marketplace Metric Health Shield"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does Haytool integrate with Amazon, Trendyol, and Shopify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Haytool connects via official REST and Partner APIs (Amazon SP-API, Trendyol Developer API, Hepsiburada Merchant Gateway, Shopify Plus webhooks). Onboarding takes under 15 minutes with OAuth token authorization and zero codebase alterations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Haytool store customer personally identifiable information (PII)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Haytool operates on an ephemeral processing architecture with zero permanent customer PII retention, adhering strictly to KVKK, GDPR, and enterprise ISO 27001 data isolation policies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the autonomous dispute engine protect merchants from false claims?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Haytool automatically cross-references barcode scan weights, warehouse departure photos, and carrier delivery logs against buyer refund tickets. It drafts fact-grounded dispute packages that improve win rates on disputed returns by up to 68%."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -17,397 +146,1064 @@
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
             mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              cyan: '#00E5FF',
+              blue: '#3B82F6',
+              indigo: '#6366F1',
+              dark: '#090B10',
+              card: '#0F121C',
+              border: '#1A2133',
+              hoverBorder: '#2E3B5B'
+            }
+          },
+          boxShadow: {
+            'glow-cyan': '0 0 25px -5px rgba(0, 229, 255, 0.25)',
+            'glow-indigo': '0 0 30px -5px rgba(99, 102, 241, 0.3)',
           }
         }
       }
     }
   </script>
+
   <style>
-    .glow-blue {
-      box-shadow: 0 0 70px -15px rgba(37, 99, 235, 0.28);
+    /* Custom refined styling */
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #090B10;
+      color: #E2E8F0;
     }
-    .grid-pattern {
-      background-size: 36px 36px;
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+
+    /* Ambient backdrop grid & gradients */
+    .bg-tech-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    .ambient-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.12) 0%, rgba(99, 102, 241, 0.08) 35%, rgba(9, 11, 16, 0) 70%);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090B10;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E293B;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+
+    /* Pulse dot animation */
+    @keyframes pulseRing {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.3); opacity: 0.2; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .pulse-ring {
+      animation: pulseRing 2.5s infinite ease-in-out;
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-blue-600/30 selection:text-blue-300">
+<body class="min-h-screen flex flex-col antialiased selection:bg-cyan-500 selection:text-black">
 
-  <!-- Ambient Backdrop -->
-  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[980px] h-[380px] bg-gradient-to-b from-blue-600/10 via-indigo-500/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
+  <!-- Top Realtime Notification Bar -->
+  <aside class="border-b border-brand-border bg-brand-dark/90 text-xs py-2 px-4 text-center text-slate-400 flex items-center justify-center gap-3">
+    <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-ring"></span>
+      All Systems Operational
+    </span>
+    <span class="text-slate-600 hidden sm:inline">&bull;</span>
+    <span class="hidden sm:inline">Active Multi-Tenant Operations Engine v2.4</span>
+    <span class="text-slate-600 hidden md:inline">&bull;</span>
+    <a href="#verification" class="text-brand-cyan hover:underline font-medium inline-flex items-center gap-1">
+      Bilişim Vadisi R&D Certified &rarr;
+    </a>
+  </aside>
 
-  <!-- Top Announcement Bar -->
-  <div class="border-b border-zinc-800/80 bg-zinc-900/60 py-2 px-4 text-center text-xs font-mono text-zinc-400">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        <span class="text-zinc-300">Haytool Core Engine v3.1: Active</span>
-        <span class="text-zinc-600 hidden sm:inline">&bull; Marketplace Webhooks Synced</span>
-      </div>
-      <div class="flex items-center gap-4 text-[11px]">
-        <span class="text-zinc-400">KVKK &amp; GDPR Compliant</span>
-        <a href="#locations" class="text-blue-400 hover:underline">Headquarters: Bilişim Vadisi, Kocaeli &rarr;</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header / Navigation -->
-  <header class="border-b border-zinc-800/80 sticky top-0 bg-zinc-950/90 backdrop-blur-md z-50">
-    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center font-bold text-white text-base shadow-sm">
-          H
+  <!-- Sticky Modern Navigation -->
+  <header class="border-b border-brand-border/80 bg-brand-dark/85 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo & Identity -->
+      <a href="#" class="flex items-center gap-3.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-cyan rounded-lg p-1">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-card to-slate-900 border border-brand-border flex items-center justify-center p-1.5 shadow-lg group-hover:border-brand-cyan/60 group-hover:shadow-glow-cyan transition-all duration-300">
+          <!-- Crispy Vector Logo Mark -->
+          <svg class="w-full h-full" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="nav-ht-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00E5FF" />
+                <stop offset="50%" stop-color="#3B82F6" />
+                <stop offset="100%" stop-color="#6366F1" />
+              </linearGradient>
+            </defs>
+            <circle cx="24" cy="24" r="21" stroke="#3B82F6" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="3 3" />
+            <path d="M14 11 L18 11 L18 37 L14 37 Z" fill="url(#nav-ht-grad)" />
+            <path d="M30 11 L34 11 L34 37 L30 37 Z" fill="url(#nav-ht-grad)" />
+            <path d="M8 27 C 14 27, 16 22, 24 22 C 32 22, 34 17, 40 17" stroke="#00E5FF" stroke-width="3" stroke-linecap="round" fill="none" />
+            <circle cx="24" cy="22" r="2.5" fill="#FFFFFF" />
+          </svg>
         </div>
         <div class="flex flex-col">
-          <span class="font-bold tracking-tight text-white text-base leading-none">Haytool<span class="text-blue-500"> Commerce</span></span>
-          <span class="text-[9px] tracking-widest uppercase text-zinc-400 font-mono mt-0.5">Retail Automation Suite</span>
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-extrabold tracking-tight text-white group-hover:text-brand-cyan transition-colors">HAYTOOL</span>
+            <span class="text-[10px] font-bold tracking-widest text-brand-cyan bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/60">COMMERCE</span>
+          </div>
+          <span class="text-[10px] text-slate-400 font-mono tracking-wide">AUTONOMOUS RETAIL AI</span>
         </div>
-      </div>
-      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-wider font-semibold text-zinc-400">
-        <a href="#platform" class="hover:text-white transition">Platform</a>
-        <a href="#integrations" class="hover:text-white transition">Integrations</a>
-        <a href="#departments" class="hover:text-white transition">Departments</a>
-        <a href="#locations" class="hover:text-white transition">Offices &amp; Map</a>
-        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-300">
+        <a href="#platform" class="hover:text-white transition-colors">Platform</a>
+        <a href="#cockpit" class="hover:text-white transition-colors flex items-center gap-1.5">
+          <span>Live Cockpit</span>
+          <span class="text-[9px] bg-indigo-500/20 text-indigo-300 px-1.5 py-0.5 rounded border border-indigo-500/30 font-mono">LIVE</span>
+        </a>
+        <a href="#integrations" class="hover:text-white transition-colors">Integrations</a>
+        <a href="#calculator" class="hover:text-white transition-colors">ROI Calculator</a>
+        <a href="#verification" class="hover:text-white transition-colors">Verification</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
       </nav>
-      <div class="flex items-center gap-3">
-        <a href="#contact" class="text-xs font-semibold px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 transition shadow-md shadow-blue-600/20">
-          Book Merchant Demo
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center space-x-3">
+        <a href="mailto:kenan.tas@haytool.online" class="text-xs font-semibold px-4 py-2.5 rounded-xl bg-brand-card hover:bg-slate-800 border border-brand-border hover:border-slate-600 text-slate-300 hover:text-white transition-all">
+          Contact Founder
+        </a>
+        <button onclick="openPilotModal()" class="text-xs font-semibold px-5 py-2.5 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold transition-all shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98]">
+          Request Pilot Access
+        </button>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle navigation menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-brand-border bg-brand-dark/95 px-6 py-6 space-y-4">
+      <nav class="flex flex-col space-y-3 text-sm font-medium text-slate-300">
+        <a href="#platform" class="py-1 hover:text-white transition-colors">Platform</a>
+        <a href="#cockpit" class="py-1 hover:text-white transition-colors">Live Cockpit Telemetry</a>
+        <a href="#integrations" class="py-1 hover:text-white transition-colors">Marketplace Integrations</a>
+        <a href="#calculator" class="py-1 hover:text-white transition-colors">ROI Savings Calculator</a>
+        <a href="#verification" class="py-1 hover:text-white transition-colors">Corporate Verification</a>
+        <a href="#faq" class="py-1 hover:text-white transition-colors">Frequently Asked Questions</a>
+      </nav>
+      <div class="pt-4 border-t border-slate-800 flex flex-col gap-2.5">
+        <button onclick="openPilotModal()" class="w-full text-center py-2.5 rounded-xl bg-brand-cyan text-slate-950 font-bold text-sm">
+          Request Pilot Access
+        </button>
+        <a href="mailto:kenan.tas@haytool.online" class="w-full text-center py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 text-sm font-medium">
+          Contact Founder
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="max-w-6xl mx-auto px-6 pt-20 pb-16 text-center grid-pattern">
-    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-medium mb-6">
-      <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-      Customer Support &amp; Dispute Automation Powered by Claude 3.5 Sonnet
-    </div>
+  <main class="flex-grow">
+    
+    <!-- Hero Section (Asymmetric Modern Layout with Live Simulated Cockpit) -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-32 overflow-hidden ambient-glow bg-tech-grid border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Compelling Copy & Conversion CTAs -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-mono text-slate-300">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+              <span>Autonomous Omnichannel Engine &bull; Zero PII Retention</span>
+            </div>
 
-    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.12]">
-      Resolve E-Commerce Tickets &amp; <br class="hidden sm:block" />
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-200">Customer Inquiries Under 60 Seconds</span>
-    </h1>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
+              Omnichannel Retail Operations <br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
+                Driven by Autonomous AI
+              </span>
+            </h1>
 
-    <p class="mt-6 text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-      Haytool aggregates customer messages, return claims, and shipment exceptions across Amazon, Trendyol, Hepsiburada, and Shopify into an automated AI resolution loop.
-    </p>
+            <p class="text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+              Haytool connects Amazon, Trendyol, Hepsiburada, and Shopify into a unified real-time operations engine. Resolve customer inquiries, marketplace return disputes, and logistics discrepancies in seconds — while shielding your seller rating.
+            </p>
 
-    <!-- UI Mockup: Operator Workspace -->
-    <div class="mt-12 max-w-4xl mx-auto rounded-xl border border-zinc-800 bg-zinc-900/90 text-left shadow-2xl glow-blue overflow-hidden">
-      <div class="flex items-center justify-between px-4 py-3 bg-zinc-950/80 border-b border-zinc-800 text-xs text-zinc-400 font-mono">
-        <div class="flex items-center gap-2">
-          <span class="w-3 h-3 rounded-full bg-red-500/70"></span>
-          <span class="w-3 h-3 rounded-full bg-yellow-500/70"></span>
-          <span class="w-3 h-3 rounded-full bg-green-500/70"></span>
-          <span class="ml-2 text-zinc-300">Haytool Ops Desk &bull; Incoming Ticket #TR-88492</span>
+            <!-- Actions & Social Proof Badges -->
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <button onclick="openPilotModal()" class="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan flex items-center justify-center gap-2 group">
+                <span>Schedule Merchant Pilot</span>
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+              
+              <a href="#cockpit" class="px-7 py-4 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-sm transition-all flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>Inspect Live Stream</span>
+              </a>
+            </div>
+
+            <!-- Trust Markers -->
+            <div class="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-y-3 gap-x-6 text-xs text-slate-400 font-medium">
+              <div class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Bilişim Vadisi Technopark R&D</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-cyan-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>No API Code Changes Needed</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-indigo-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>End-to-End Encryption</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Live Telemetry Cockpit -->
+          <div class="lg:col-span-5" id="cockpit">
+            <div class="rounded-2xl bg-brand-card/90 border border-brand-border shadow-2xl p-5 relative overflow-hidden backdrop-blur-xl">
+              
+              <!-- Console Top Bar -->
+              <div class="flex items-center justify-between pb-4 mb-4 border-b border-brand-border text-xs">
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                  <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                  <span class="font-mono text-slate-400 ml-2 font-medium">haytool-dispatch.core</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                  <span class="font-mono text-[11px] text-emerald-400 font-semibold">STREAMING</span>
+                </div>
+              </div>
+
+              <!-- Stream Ticker Container -->
+              <div class="space-y-3 font-mono text-xs" id="stream-ticker">
+                
+                <!-- Event 1 -->
+                <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 transition-all hover:border-brand-cyan/40">
+                  <div class="flex items-center justify-between text-slate-400 mb-1.5">
+                    <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-300 font-semibold text-[10px] border border-amber-500/20">AMAZON DISPUTE</span>
+                    <span class="text-[10px] text-slate-500">Just now</span>
+                  </div>
+                  <p class="text-slate-200 font-sans font-medium text-xs">Return claim #AMZ-4029: Disputed item weight mismatch</p>
+                  <div class="mt-2 text-[11px] text-emerald-400 flex items-center justify-between bg-slate-950 px-2 py-1.5 rounded border border-slate-800">
+                    <span>&check; Matched warehouse departure photo + Yurtiçi tracking</span>
+                    <span class="font-bold text-white">+840 ₺ Saved</span>
+                  </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 transition-all hover:border-brand-cyan/40">
+                  <div class="flex items-center justify-between text-slate-400 mb-1.5">
+                    <span class="px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 font-semibold text-[10px] border border-orange-500/20">TRENDYOL QUESTION</span>
+                    <span class="text-[10px] text-slate-500">12s ago</span>
+                  </div>
+                  <p class="text-slate-200 font-sans font-medium text-xs">Buyer Query: "Does this size fit standard EU 42?"</p>
+                  <div class="mt-2 text-[11px] text-cyan-300 flex items-center justify-between bg-slate-950 px-2 py-1.5 rounded border border-slate-800">
+                    <span>&check; Catalog prompt cached: Responded in 1.4s</span>
+                    <span class="text-slate-400 font-mono">100% Policy Pass</span>
+                  </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 transition-all hover:border-brand-cyan/40">
+                  <div class="flex items-center justify-between text-slate-400 mb-1.5">
+                    <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 font-semibold text-[10px] border border-emerald-500/20">SHOPIFY &times; HEPSİBURADA</span>
+                    <span class="text-[10px] text-slate-500">45s ago</span>
+                  </div>
+                  <p class="text-slate-200 font-sans font-medium text-xs">Inventory synchronization across 1,840 SKUs</p>
+                  <div class="mt-2 text-[11px] text-indigo-300 flex items-center justify-between bg-slate-950 px-2 py-1.5 rounded border border-slate-800">
+                    <span>&check; Stock buffer locked &bull; Prevented overselling</span>
+                    <span class="text-emerald-400 font-mono">0 Latency</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Cockpit Footer Telemetry Bar -->
+              <div class="mt-4 pt-4 border-t border-brand-border flex items-center justify-between text-[11px] text-slate-400 font-mono">
+                <span>Active Channels: <strong class="text-white">5 Marketplaces</strong></span>
+                <span>Avg Latency: <strong class="text-emerald-400">88ms</strong></span>
+              </div>
+
+            </div>
+          </div>
+
         </div>
-        <span class="text-emerald-400 text-[11px] bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Claude 3.5 Auto-Draft Verified</span>
       </div>
-      
-      <div class="p-6 space-y-4 bg-zinc-950/50 text-xs sm:text-sm">
-        <div class="p-3.5 rounded-lg bg-zinc-900/80 border border-zinc-800">
-          <div class="flex items-center justify-between text-xs text-zinc-400 font-mono mb-1">
-            <span>Customer: Selin Y. (Marketplace: Amazon TR)</span>
-            <span class="text-amber-400">Order #408-2910301 (Carrier: Yurtiçi Kargo)</span>
-          </div>
-          <p class="text-zinc-200">"Sipariş ettiğim ürünün rengi yanlış geldi, kutuyu açtım ama kullanmadım. İade kodu nasıl alabilirim?"</p>
-        </div>
+    </section>
 
-        <div class="p-4 rounded-lg bg-blue-950/20 border border-blue-500/30 space-y-2">
-          <div class="flex items-center justify-between text-xs font-mono text-blue-400">
-            <span class="flex items-center gap-1.5 font-bold">✨ Claude 3.5 Generated Resolution Draft</span>
-            <span class="text-zinc-500">Confidence: 99.4% &bull; Latency: 1.1s</span>
+    <!-- Key Performance Metrics Section -->
+    <section class="py-14 bg-brand-dark border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="p-6 rounded-2xl bg-brand-card/80 border border-brand-border hover:border-brand-hoverBorder transition-all">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-blue-400 mb-1">
+              -74%
+            </div>
+            <div class="text-sm font-semibold text-white mb-1">Resolution Time Drop</div>
+            <p class="text-xs text-slate-400">Automatic escalation and grounded evidence bundling.</p>
           </div>
-          <p class="text-zinc-300 leading-relaxed text-xs sm:text-sm">
-            "Merhaba Selin Hanım, siparişinizle ilgili yaşanan aksaklık için özür dileriz. Siparişiniz (No: 408-2910301) kolay iade kapsamındadır. Panelimiz üzerinden oluşturulan Yurtiçi Kargo iade kodunuz: <strong>918-204-118</strong>. Ürünü orijinal ambalajında kargoya teslim ettiğinizde değişim veya ücret iadeniz otomatik onaylanacaktır."
+
+          <div class="p-6 rounded-2xl bg-brand-card/80 border border-brand-border hover:border-brand-hoverBorder transition-all">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-indigo-400 mb-1">
+              &lt; 90s
+            </div>
+            <div class="text-sm font-semibold text-white mb-1">Median Turnaround</div>
+            <p class="text-xs text-slate-400">Buyer inquiry to verified resolution across all channels.</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-brand-card/80 border border-brand-border hover:border-brand-hoverBorder transition-all">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 mb-1">
+              99.4%
+            </div>
+            <div class="text-sm font-semibold text-white mb-1">Store CSAT Rating</div>
+            <p class="text-xs text-slate-400">Maintains peak seller metrics on Amazon Buy Box & Trendyol.</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-brand-card/80 border border-brand-border hover:border-brand-hoverBorder transition-all">
+            <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">
+              Zero PII
+            </div>
+            <div class="text-sm font-semibold text-white mb-1">Customer Privacy First</div>
+            <p class="text-xs text-slate-400">Ephemeral memory processing compliant with GDPR & KVKK.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Modules & Interactive Feature Studio -->
+    <section id="platform" class="py-24 bg-brand-dark/95 border-b border-brand-border relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/60 text-xs font-mono text-brand-cyan mb-4">
+            <span>ENGINEERED ARCHITECTURE</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Comprehensive Automation for High-Velocity Merchants
+          </h2>
+          <p class="mt-4 text-base text-slate-400">
+            Four specialized modules working synchronously to handle retail volume spikes without expanding headcounts.
           </p>
-          <div class="pt-2 flex items-center gap-2">
-            <button class="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-500 text-white rounded font-medium text-xs">Approve &amp; Send to Buyer</button>
-            <button class="px-3.5 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-300 rounded font-medium text-xs">Edit Response</button>
+        </div>
+
+        <!-- Interactive Module Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-10 max-w-4xl mx-auto p-1.5 rounded-2xl bg-slate-900 border border-slate-800" role="tablist">
+          <button onclick="switchTab('dispute')" id="tab-btn-dispute" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-cyan text-slate-950 shadow-glow-cyan" role="tab" aria-selected="true">
+            01. Autonomous Dispute Engine
+          </button>
+          <button onclick="switchTab('inquiries')" id="tab-btn-inquiries" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false">
+            02. Context-Aware Inquiries
+          </button>
+          <button onclick="switchTab('catalog')" id="tab-btn-catalog" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false">
+            03. Token-Cached Catalog
+          </button>
+          <button onclick="switchTab('shield')" id="tab-btn-shield" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white" role="tab" aria-selected="false">
+            04. Marketplace Metric Shield
+          </button>
+        </div>
+
+        <!-- Tab 1: Dispute Engine -->
+        <div id="tab-content-dispute" class="grid lg:grid-cols-12 gap-8 items-center rounded-3xl bg-brand-card border border-brand-border p-8 lg:p-12">
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider">Module 01 &bull; Loss Prevention</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white">Autonomous Dispute & Return Package Resolution</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Disputed returns represent one of the biggest profit drains for omnichannel merchants. Haytool's Dispute Engine retrieves carrier proof-of-delivery timestamps, weight stamps from your 3PL, and matches them directly with the marketplace return policy.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Automated generation of claim dossiers for Amazon SAFE-T and Trendyol İtiraz.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Barcode weight triangulation stops claims on empty or substituted boxes.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Recovers up to 68% of lost inventory costs without manual clerical hours.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-6 bg-slate-950/80 rounded-2xl border border-slate-800 p-6 font-mono text-xs text-slate-300 space-y-3">
+            <div class="text-slate-400 text-[11px] pb-2 border-b border-slate-800 flex justify-between">
+              <span>EVIDENCE_DOSSIER_GEN.v2</span>
+              <span class="text-emerald-400">VALIDATED</span>
+            </div>
+            <div class="text-slate-400">Order ID: <span class="text-white">#AMZ-8201-9482</span></div>
+            <div class="text-slate-400">Carrier Scan: <span class="text-white">Yurtiçi Kargo #9482109 (Delivered 14:22)</span></div>
+            <div class="text-slate-400">Departure Weight: <span class="text-white">1,420g</span> &bull; Returned Box: <span class="text-rose-400">180g (Delta: -87%)</span></div>
+            <div class="p-3 rounded-lg bg-emerald-950/30 border border-emerald-800/40 text-emerald-300">
+              &gt; AI Action: Auto-submitted photographic discrepancy proof to Marketplace Arbitration Board with invoice attachment.
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Marketplace Badges Band -->
-  <section id="integrations" class="border-y border-zinc-800/80 bg-zinc-900/40 py-8">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center text-xs font-mono uppercase tracking-widest text-zinc-500 mb-6">
-        Native Multi-Channel &amp; Carrier Integrations
-      </div>
-      <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14 text-zinc-400 font-semibold text-sm">
-        <span class="flex items-center gap-2"><span class="text-amber-500">●</span> Amazon Seller Central</span>
-        <span class="flex items-center gap-2"><span class="text-orange-500">●</span> Trendyol Marketplace</span>
-        <span class="flex items-center gap-2"><span class="text-orange-400">●</span> Hepsiburada Partner</span>
-        <span class="flex items-center gap-2"><span class="text-emerald-500">●</span> Shopify Plus</span>
-        <span class="flex items-center gap-2"><span class="text-blue-500">●</span> Yurtiçi &amp; MNG Kargo</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Corporate Departments & Inquiries Directory -->
-  <section id="departments" class="max-w-7xl mx-auto px-6 py-20">
-    <div class="max-w-3xl mb-12">
-      <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded border border-zinc-700 bg-zinc-800 text-[11px] font-mono text-zinc-300 mb-3">
-        ORGANIZATIONAL DIRECTORY
-      </div>
-      <h2 class="text-2xl sm:text-3xl font-bold text-white">Dedicated Department Communications</h2>
-      <p class="mt-2 text-sm text-zinc-400">Direct your communications to specialized functional units for prompt service-level resolution.</p>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 font-mono text-xs">
-      
-      <!-- Dept 1: Founders / Executive -->
-      <div class="p-6 rounded-xl border border-blue-500/40 bg-blue-950/10 flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between mb-3">
-            <span class="text-blue-400 font-bold uppercase tracking-wider text-[11px]">Executive Office</span>
-            <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+        <!-- Tab 2: Inquiries (Hidden by default) -->
+        <div id="tab-content-inquiries" class="hidden grid lg:grid-cols-12 gap-8 items-center rounded-3xl bg-brand-card border border-brand-border p-8 lg:p-12">
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider">Module 02 &bull; Customer Care Copilot</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white">Context-Aware Omnichannel Inquiries</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Standard chatbots fail because they lack real-time context about buyer history, specific SKU compatibility, and live carrier transit status. Haytool continuously aggregates catalog attributes and carrier events to construct accurate answers instantly.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Multilingual support across Turkish, English, German, and Arabic.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Direct carrier webhook lookup: answers "Where is my shipment?" in under 2 seconds.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Adheres strictly to marketplace communication rules to prevent seller account penalties.</span>
+              </li>
+            </ul>
           </div>
-          <h3 class="text-base font-bold text-white font-sans">Founders &amp; Alliances</h3>
-          <p class="text-zinc-400 mt-2 font-sans text-xs leading-relaxed">
-            Startup partnerships, AI grant operations, platform architecture, and institutional investor relations.
-          </p>
-        </div>
-        <div class="mt-6 pt-4 border-t border-zinc-800">
-          <span class="text-zinc-500 block text-[10px] uppercase">Direct Dispatch:</span>
-          <a href="mailto:founders@haytool.online" class="text-blue-400 hover:underline font-bold text-xs mt-1 block">founders@haytool.online</a>
-        </div>
-      </div>
-
-      <!-- Dept 2: Merchant Operations / Support -->
-      <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between mb-3">
-            <span class="text-zinc-400 font-bold uppercase tracking-wider text-[11px]">Customer Success</span>
-            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <div class="lg:col-span-6 bg-slate-950/80 rounded-2xl border border-slate-800 p-6 font-mono text-xs text-slate-300 space-y-3">
+            <div class="text-slate-400 text-[11px] pb-2 border-b border-slate-800 flex justify-between">
+              <span>BUYER_QUERY_RESOLVER</span>
+              <span class="text-cyan-400">90s SLA</span>
+            </div>
+            <div class="p-3 rounded-lg bg-slate-900 border border-slate-800 text-slate-300">
+              Buyer (Trendyol): "Siparişim kargoya verildi mi? Yarın elimde olur mu?"
+            </div>
+            <div class="p-3 rounded-lg bg-cyan-950/30 border border-cyan-800/40 text-cyan-200">
+              &gt; Haytool AI: "Merhaba! Siparişiniz bugün saat 15:30'da Aras Kargo Gebze Şubesi'nden yola çıkmıştır (Takip No: 28491823). Teslimat adresinize göre yarın saat 12:00–16:00 arasında teslim edilmesi planlanmaktadır."
+            </div>
           </div>
-          <h3 class="text-base font-bold text-white font-sans">Merchant Desk</h3>
-          <p class="text-zinc-400 mt-2 font-sans text-xs leading-relaxed">
-            Marketplace webhook sync assistance, carrier tracking exceptions, and SLA escalation tickets.
-          </p>
         </div>
-        <div class="mt-6 pt-4 border-t border-zinc-800">
-          <span class="text-zinc-500 block text-[10px] uppercase">Service Desk:</span>
-          <a href="mailto:support@haytool.online" class="text-zinc-300 hover:text-white hover:underline text-xs mt-1 block">support@haytool.online</a>
-        </div>
-      </div>
 
-      <!-- Dept 3: Commercial Sales & Solutions -->
-      <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between mb-3">
-            <span class="text-zinc-400 font-bold uppercase tracking-wider text-[11px]">Commercial Sales</span>
-            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+        <!-- Tab 3: Catalog (Hidden by default) -->
+        <div id="tab-content-catalog" class="hidden grid lg:grid-cols-12 gap-8 items-center rounded-3xl bg-brand-card border border-brand-border p-8 lg:p-12">
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider">Module 03 &bull; Deep Inference Caching</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white">Prompt Caching & High-Density SKU Index</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              When catalog sizes exceed 50,000 SKUs, standard LLM queries become slow and cost-prohibitive. Haytool structures catalog specs into cached contextual embeddings, keeping token costs down by 80% while enabling sub-second inferences during peak shopping events.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Zero latency degradation during Black Friday and Cyber Week surges.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Real-time price & stock reconciliation between marketplaces and ERPs.</span>
+              </li>
+            </ul>
           </div>
-          <h3 class="text-base font-bold text-white font-sans">Enterprise Growth</h3>
-          <p class="text-zinc-400 mt-2 font-sans text-xs leading-relaxed">
-            Multi-store contract licensing, high-volume order pricing, and on-premise carrier workflows.
-          </p>
-        </div>
-        <div class="mt-6 pt-4 border-t border-zinc-800">
-          <span class="text-zinc-500 block text-[10px] uppercase">Commercial Inquiries:</span>
-          <a href="mailto:sales@haytool.online" class="text-zinc-300 hover:text-white hover:underline text-xs mt-1 block">sales@haytool.online</a>
-        </div>
-      </div>
-
-      <!-- Dept 4: Legal & Compliance -->
-      <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-700 transition flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between mb-3">
-            <span class="text-zinc-400 font-bold uppercase tracking-wider text-[11px]">Compliance Office</span>
-            <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+          <div class="lg:col-span-6 bg-slate-950/80 rounded-2xl border border-slate-800 p-6 font-mono text-xs text-slate-300 space-y-3">
+            <div class="text-slate-400 text-[11px] pb-2 border-b border-slate-800 flex justify-between">
+              <span>TOKEN_CACHE_TELEMETRY</span>
+              <span class="text-purple-400">92% HIT RATE</span>
+            </div>
+            <div class="text-slate-400">Indexed Catalog: <span class="text-white">124,500 Active SKUs</span></div>
+            <div class="text-slate-400">Cached Prompt Tokens: <span class="text-cyan-400">182,400 Tokens (Pre-Indexed)</span></div>
+            <div class="text-slate-400">Inference Response Time: <span class="text-emerald-400">62ms avg</span></div>
           </div>
-          <h3 class="text-base font-bold text-white font-sans">Legal &amp; Privacy</h3>
-          <p class="text-zinc-400 mt-2 font-sans text-xs leading-relaxed">
-            KVKK customer data processing agreements, GDPR compliance verifications, and trade registries.
-          </p>
         </div>
-        <div class="mt-6 pt-4 border-t border-zinc-800">
-          <span class="text-zinc-500 block text-[10px] uppercase">Compliance Contact:</span>
-          <a href="mailto:legal@haytool.online" class="text-zinc-300 hover:text-white hover:underline text-xs mt-1 block">legal@haytool.online</a>
+
+        <!-- Tab 4: Shield (Hidden by default) -->
+        <div id="tab-content-shield" class="hidden grid lg:grid-cols-12 gap-8 items-center rounded-3xl bg-brand-card border border-brand-border p-8 lg:p-12">
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-xs font-mono font-semibold text-brand-cyan uppercase tracking-wider">Module 04 &bull; Account Defense</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white">Marketplace Metric Shield</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Late Dispatch Rate (LDR), Order Defect Rate (ODR), and Unanswered Messages can cause temporary or permanent marketplace suspensions. The Metric Shield proactively tracks SLAs and routes urgent tickets to automated emergency workflows.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Amazon Buy Box &amp; Trendyol Mağaza Puanı protection.</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Automated carrier tracking notifications prevent anxious customer inquiries before they arise.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-6 bg-slate-950/80 rounded-2xl border border-slate-800 p-6 font-mono text-xs text-slate-300 space-y-3">
+            <div class="text-slate-400 text-[11px] pb-2 border-b border-slate-800 flex justify-between">
+              <span>METRIC_STATUS</span>
+              <span class="text-emerald-400">100% HEALTH</span>
+            </div>
+            <div class="flex justify-between items-center py-1 border-b border-slate-900">
+              <span>Amazon Order Defect Rate (ODR):</span>
+              <span class="text-emerald-400 font-bold">0.08% (&lt; 1% target)</span>
+            </div>
+            <div class="flex justify-between items-center py-1 border-b border-slate-900">
+              <span>Trendyol Cevaplama Süresi:</span>
+              <span class="text-emerald-400 font-bold">4.2 Dakika (&lt; 15m)</span>
+            </div>
+            <div class="flex justify-between items-center py-1">
+              <span>Hepsiburada Zamanında Kargolama:</span>
+              <span class="text-emerald-400 font-bold">99.8%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Marketplace & Storefront Integrations Grid -->
+    <section id="integrations" class="py-20 bg-brand-dark border-b border-brand-border">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <span class="text-xs font-mono text-slate-400 uppercase tracking-widest">ECOSYSTEM SYNC</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2 mb-4">Direct Connectors for Leading Marketplaces</h2>
+        <p class="text-sm text-slate-400 max-w-2xl mx-auto mb-12">
+          Plug Haytool directly into your active channels with pre-built authorized API integrations. Zero webhook infrastructure required from your engineering team.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          
+          <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold mb-3">
+              AZ
+            </div>
+            <div class="font-bold text-sm text-white">Amazon SP-API</div>
+            <span class="text-[10px] text-emerald-400 font-mono">Rest &bull; Bi-directional</span>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-orange-400 font-bold mb-3">
+              TY
+            </div>
+            <div class="font-bold text-sm text-white">Trendyol Partner</div>
+            <span class="text-[10px] text-emerald-400 font-mono">Webhooks &bull; Realtime</span>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-orange-600/10 border border-orange-600/20 flex items-center justify-center text-orange-500 font-bold mb-3">
+              HB
+            </div>
+            <div class="font-bold text-sm text-white">Hepsiburada</div>
+            <span class="text-[10px] text-emerald-400 font-mono">Merchant API</span>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold mb-3">
+              SH
+            </div>
+            <div class="font-bold text-sm text-white">Shopify Plus</div>
+            <span class="text-[10px] text-emerald-400 font-mono">GraphQL &bull; Webhooks</span>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 font-bold mb-3">
+              CS
+            </div>
+            <div class="font-bold text-sm text-white">Çiçeksepeti</div>
+            <span class="text-[10px] text-emerald-400 font-mono">Vendor API</span>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-brand-card/90 border border-brand-border hover:border-brand-hoverBorder hover:bg-slate-900 transition-all text-center">
+            <div class="w-10 h-10 mx-auto rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold mb-3">
+              3PL
+            </div>
+            <div class="font-bold text-sm text-white">Carriers &amp; ERP</div>
+            <span class="text-[10px] text-emerald-400 font-mono">Aras, Yurtiçi, SAP</span>
+          </div>
+
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- Interactive ROI & Savings Calculator -->
+    <section id="calculator" class="py-24 bg-brand-dark/95 border-b border-brand-border relative">
+      <div class="max-w-4xl mx-auto px-6">
+        
+        <div class="text-center mb-12">
+          <span class="text-xs font-mono text-brand-cyan uppercase tracking-widest">PROVABLE ROI</span>
+          <h2 class="text-3xl font-extrabold text-white mt-1">Estimate Your Monthly Operational Savings</h2>
+          <p class="text-slate-400 text-sm mt-2">Adjust your estimated monthly order volume across all marketplace channels.</p>
+        </div>
 
-  <!-- Physical Locations, Corporate Details & Google Map Section -->
-  <section id="locations" class="border-t border-zinc-800/80 py-20 bg-zinc-950">
+        <div class="p-8 sm:p-10 rounded-3xl bg-brand-card border border-brand-border shadow-2xl space-y-8">
+          
+          <!-- Slider Control -->
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <label for="order-slider" class="text-sm font-semibold text-slate-200">Monthly Marketplace Orders:</label>
+              <span id="order-count-display" class="font-mono text-xl font-extrabold text-brand-cyan">15,000</span>
+            </div>
+            <input type="range" id="order-slider" min="1000" max="100000" step="1000" value="15000" class="w-full h-2.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400" oninput="calculateSavings(this.value)">
+            <div class="flex justify-between text-[11px] text-slate-500 font-mono mt-2">
+              <span>1,000 orders</span>
+              <span>50,000</span>
+              <span>100,000 orders</span>
+            </div>
+          </div>
+
+          <!-- Computed Metrics Result Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800">
+            
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+              <div class="text-xs text-slate-400 mb-1">Disputes Automated / mo</div>
+              <div id="stat-disputes" class="text-2xl font-extrabold text-white font-mono">450</div>
+              <div class="text-[10px] text-emerald-400 mt-1">&plusmn; 68% Win Rate</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+              <div class="text-xs text-slate-400 mb-1">Agent Hours Saved</div>
+              <div id="stat-hours" class="text-2xl font-extrabold text-brand-cyan font-mono">188 hrs</div>
+              <div class="text-[10px] text-slate-400 mt-1">~1.2 FTE Equivalent</div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+              <div class="text-xs text-slate-400 mb-1">Projected Monthly Savings</div>
+              <div id="stat-savings" class="text-2xl font-extrabold text-emerald-400 font-mono">₺ 84,000</div>
+              <div class="text-[10px] text-slate-400 mt-1">Returns + Support Overhead</div>
+            </div>
+
+          </div>
+
+          <div class="text-center pt-2">
+            <button onclick="openPilotModal()" class="px-8 py-3.5 rounded-xl bg-brand-cyan hover:bg-cyan-400 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan">
+              Unlock These Savings &bull; Request Pilot
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Official Corporate Verification & Credentials Section -->
+    <section id="verification" class="py-24 bg-brand-dark border-b border-brand-border">
+      <div class="max-w-5xl mx-auto px-6">
+        
+        <div class="p-8 sm:p-12 rounded-3xl bg-brand-card/90 border border-brand-border relative overflow-hidden">
+          
+          <!-- Section Header -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-8 mb-8 border-b border-brand-border gap-4">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                <span class="text-xs font-mono font-semibold text-emerald-400 uppercase tracking-wider">OFFICIALLY REGISTERED ENTITY</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Haytool Commerce Corporate Record</h2>
+            </div>
+            <div>
+              <span class="px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-xs font-semibold text-emerald-300">
+                Active &bull; Good Standing
+              </span>
+            </div>
+          </div>
+
+          <!-- Corporate Details Grid -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+            
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Legal Entity / Trademark</p>
+              <p class="font-bold text-white text-base">Haytool Commerce</p>
+              <p class="text-xs text-slate-400 mt-1">Retail AI & Automation</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Founder & Executive</p>
+              <p class="font-bold text-white text-base">Kenan Tas</p>
+              <p class="text-xs text-brand-cyan mt-1">Founder &amp; Chief Executive Officer</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1">R&D Headquarters</p>
+              <p class="font-semibold text-slate-200">Bilisim Vadisi Teknoloji Bolgesi</p>
+              <p class="text-xs text-slate-400 mt-1">Gebze, Kocaeli, Turkiye</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Registry Inception</p>
+              <p class="font-semibold text-slate-200">April 2024</p>
+              <p class="text-xs text-emerald-400 mt-1">Active Operations</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Executive Work Email</p>
+              <a href="mailto:kenan.tas@haytool.online" class="font-semibold text-brand-cyan hover:underline break-all">
+                kenan.tas@haytool.online
+              </a>
+              <p class="text-xs text-slate-400 mt-1">Direct inquiries</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+              <p class="text-slate-400 text-xs uppercase font-medium mb-1">Direct Telephony</p>
+              <p class="font-semibold text-slate-200">+90 (262) 678 80 40</p>
+              <p class="text-xs text-slate-400 mt-1">Headquarters switchboard</p>
+            </div>
+
+          </div>
+
+          <!-- Official Registry Verification Buttons -->
+          <div class="mt-8 pt-8 border-t border-brand-border flex flex-wrap items-center gap-4">
+            
+            <a href="https://www.crunchbase.com/organization/haytool-commerce" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-slate-500 text-xs font-semibold text-white transition-all shadow-sm">
+              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Verify on Crunchbase Database</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/kenan-tas-279793442" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-950/60 hover:bg-blue-900/80 border border-blue-800/70 text-xs font-semibold text-blue-200 transition-all shadow-sm">
+              <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>Founder LinkedIn Profile &bull; Kenan Tas</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive FAQ Section (Optimized for Search Engine Snippets & AEO) -->
+    <section id="faq" class="py-24 bg-brand-dark/95 border-b border-brand-border">
+      <div class="max-w-4xl mx-auto px-6">
+        
+        <div class="text-center mb-16">
+          <span class="text-xs font-mono text-brand-cyan uppercase tracking-widest">TRANSPARENCY & CLARITY</span>
+          <h2 class="text-3xl font-extrabold text-white mt-1">Frequently Asked Questions</h2>
+          <p class="text-slate-400 text-sm mt-2">Answers regarding integrations, compliance, and sandbox deployments.</p>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- FAQ Item 1 -->
+          <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+            <button class="w-full text-left p-6 flex justify-between items-center text-white font-semibold text-base focus:outline-none" onclick="toggleFaq(1)">
+              <span>How does Haytool connect to our Amazon or Trendyol store?</span>
+              <svg id="faq-chevron-1" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-ans-1" class="px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+              Haytool connects using official partner protocols (Amazon SP-API with LWA authorization, Trendyol Partner API tokens, and Shopify Plus Webhooks). We never ask for primary master passwords. Onboarding takes less than 15 minutes without touching your storefront frontend code.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+            <button class="w-full text-left p-6 flex justify-between items-center text-white font-semibold text-base focus:outline-none" onclick="toggleFaq(2)">
+              <span>Does Haytool store customer sensitive personal information (PII)?</span>
+              <svg id="faq-chevron-2" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-ans-2" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+              No. We enforce a zero-PII retention architecture. Inbound queries and delivery information are processed in memory to formulate dispute evidence or inquiry responses, and are immediately flushed. Your customers' data remains fully compliant with KVKK and GDPR regulations.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+            <button class="w-full text-left p-6 flex justify-between items-center text-white font-semibold text-base focus:outline-none" onclick="toggleFaq(3)">
+              <span>Can our human support team oversee or override AI actions?</span>
+              <svg id="faq-chevron-3" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-ans-3" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+              Yes, absolutely. Haytool supports both "Copilot Mode" (drafting recommended responses for human agent one-click review) and "Autonomous Mode" (auto-dispatching verified responses within defined confidence thresholds, e.g., &gt; 98%). You maintain total administrative governance.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="rounded-2xl bg-brand-card border border-brand-border overflow-hidden">
+            <button class="w-full text-left p-6 flex justify-between items-center text-white font-semibold text-base focus:outline-none" onclick="toggleFaq(4)">
+              <span>How soon can we launch a pilot?</span>
+              <svg id="faq-chevron-4" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div id="faq-ans-4" class="hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed">
+              Pilot sandboxes are provisioned within 24 to 48 hours following an initial assessment call. During the pilot period, Haytool operates in read-only audit mode first to compute dispute win rates and benchmark response quality before any live messaging is engaged.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pilot Request & CTA Section -->
+    <section id="pilot" class="py-24 bg-gradient-to-b from-brand-dark to-slate-950 text-center relative overflow-hidden">
+      <div class="max-w-3xl mx-auto px-6 relative z-10">
+        
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-brand-cyan to-brand-blue flex items-center justify-center p-3 mb-6 shadow-glow-cyan">
+          <svg class="w-full h-full text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+          Supercharge Your Marketplace Operations
+        </h2>
+        <p class="text-slate-300 text-base sm:text-lg mt-4 mb-8 leading-relaxed">
+          Join high-volume retailers reducing return dispute losses and answering buyer tickets in seconds with Haytool Commerce.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="openPilotModal()" class="w-full sm:w-auto px-9 py-4 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98]">
+            Request Merchant Sandbox
+          </button>
+          <a href="mailto:kenan.tas@haytool.online?subject=Haytool%20Pilot%20Inquiry" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-sm transition-all">
+            Email Executive Office
+          </a>
+        </div>
+
+        <p class="text-xs text-slate-500 mt-6 font-mono">
+          Strict confidentiality &bull; KVKK / GDPR Compliant &bull; Non-Disclosure Agreement on request
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Comprehensive Corporate Footer -->
+  <footer class="border-t border-brand-border bg-brand-dark py-16 text-xs text-slate-400">
     <div class="max-w-7xl mx-auto px-6">
       
-      <div class="max-w-2xl mb-12">
-        <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded border border-zinc-700 bg-zinc-900 text-[11px] font-mono text-zinc-300 mb-3">
-          PHYSICAL PRESENCE &amp; CAMPUS
-        </div>
-        <h2 class="text-3xl font-bold text-white">Offices &amp; R&amp;D Facilities</h2>
-        <p class="mt-2 text-sm text-zinc-400">Haytool Technologies operates its engineering laboratory in Bilişim Vadisi (Türkiye's National Technology Hub) with executive offices in Istanbul.</p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-10 items-start">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-brand-border">
         
-        <!-- Address & Corporate Details Card -->
-        <div class="space-y-6">
-          
-          <!-- R&D Campus Card -->
-          <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">Primary R&amp;D Center</span>
-              <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">Teknopark Reg. #41-892</span>
+        <!-- Brand Info -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-slate-900 border border-brand-border flex items-center justify-center p-1">
+              <svg class="w-full h-full" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="21" stroke="#3B82F6" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="3 3" />
+                <path d="M14 11 L18 11 L18 37 L14 37 Z" fill="#00E5FF" />
+                <path d="M30 11 L34 11 L34 37 L30 37 Z" fill="#6366F1" />
+                <path d="M8 27 C 14 27, 16 22, 24 22 C 32 22, 34 17, 40 17" stroke="#00E5FF" stroke-width="2.5" fill="none" />
+              </svg>
             </div>
-            <h3 class="text-lg font-bold text-white">Bilişim Vadisi Campus (Gebze / Kocaeli)</h3>
-            <p class="text-xs text-zinc-300 font-mono leading-relaxed">
-              Bilişim Vadisi Teknoloji Geliştirme Bölgesi, Muallimköy Mah. Deniz Cad. No: 143/5, 1. Aşama Ar-Ge Binası K:3 No:318, 41400 Gebze / Kocaeli, Türkiye
-            </p>
-            <div class="pt-2 flex flex-wrap gap-4 text-xs font-mono">
-              <a href="https://maps.app.goo.gl/dUpBwWdF6v8J4HnL7" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 font-semibold underline">
-                <span>📍 View on Google Maps</span>
-              </a>
-              <span class="text-zinc-500">&bull;</span>
-              <span class="text-zinc-300">Tel: +90 (262) 678 80 40</span>
-            </div>
+            <span class="text-lg font-bold text-white tracking-tight">HAYTOOL COMMERCE</span>
           </div>
-
-          <!-- Sales & Legal Office Card -->
-          <div class="p-6 rounded-xl border border-zinc-800 bg-zinc-900/50 space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-xs font-mono font-bold text-indigo-400 uppercase tracking-wider">Commercial &amp; Operations Office</span>
-              <span class="text-[11px] font-mono text-zinc-400">Istanbul HQ</span>
-            </div>
-            <h3 class="text-lg font-bold text-white">Nurol Plaza (Maslak / İstanbul)</h3>
-            <p class="text-xs text-zinc-300 font-mono leading-relaxed">
-              Maslak Mah. Büyükdere Cad. No: 255 Nurol Plaza B Blok K:11 D:42, 34398 Sarıyer / İstanbul, Türkiye
-            </p>
-            <div class="pt-2 flex flex-wrap gap-4 text-xs font-mono">
-              <span class="text-zinc-300">Tel: +90 (850) 308 94 22</span>
-              <span class="text-zinc-500">&bull;</span>
-              <span class="text-zinc-300">Primary: <a href="mailto:founders@haytool.online" class="text-blue-400 hover:underline">founders@haytool.online</a></span>
-            </div>
+          <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+            Enterprise-grade autonomous retail AI operations engine. Automating return dispute packages, omnichannel buyer care, and token-cached catalog synchronization.
+          </p>
+          <div class="text-[11px] text-slate-500 font-mono">
+            R&D Center: Bilişim Vadisi Teknoloji Geliştirme Bölgesi, Gebze, Kocaeli, TR
           </div>
-
-          <!-- Legal & Registry Box -->
-          <div class="p-4 rounded-xl border border-zinc-800/80 bg-zinc-950 font-mono text-xs space-y-1.5 text-zinc-400">
-            <div class="flex justify-between">
-              <span>Corporate Entity:</span>
-              <span class="text-zinc-200">Haytool Yazılım Teknolojileri A.Ş.</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Incorporation Date:</span>
-              <span class="text-zinc-200">April 2024 (Founded in Kocaeli)</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Trade Registry No (Ticaret Sicil):</span>
-              <span class="text-zinc-200">418920 / Gebze Ticaret Odası</span>
-            </div>
-            <div class="flex justify-between">
-              <span>MERSİS Number:</span>
-              <span class="text-zinc-200">0461099281000001</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Tax Authority (Vergi Dairesi):</span>
-              <span class="text-zinc-200">Uluçınar V.D. - 4610992810</span>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Google Maps Embed & Verification Card -->
-        <div class="rounded-xl border border-zinc-800 bg-zinc-900/60 p-4 space-y-4">
-          <div class="flex items-center justify-between text-xs font-mono text-zinc-400">
-            <span class="flex items-center gap-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
-              Live Geolocation Pin: Bilişim Vadisi Tech Campus
-            </span>
-            <a href="https://maps.app.goo.gl/dUpBwWdF6v8J4HnL7" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
-              Open Full Map &rarr;
-            </a>
-          </div>
-
-          <!-- Interactive Google Maps Iframe -->
-          <div class="w-full h-[380px] rounded-lg overflow-hidden border border-zinc-800 relative bg-zinc-950">
-            <iframe 
-              title="Haytool Technologies Campus Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.2307525381667!2d29.47953681541334!3d40.79543157932313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb2131972bca57%3A0xc3cf9c637a77b81f!2zQsiliWlpbSBWYWRpc2k!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
-              width="100%" 
-              height="100%" 
-              style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(90%);" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-
-          <p class="text-[11px] font-mono text-zinc-500 leading-tight">
-            * Campus visits and on-premise merchant demos by appointment only. Visitors must register at the Bilişim Vadisi Security Gate 1 with corporate ID.
+        <!-- Direct Contact -->
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Executive Contact</div>
+          <p class="text-slate-400">Founder &amp; CEO: <br><strong class="text-slate-200">Kenan Tas</strong></p>
+          <p>
+            Email: <a href="mailto:kenan.tas@haytool.online" class="text-brand-cyan hover:underline">kenan.tas@haytool.online</a>
+          </p>
+          <p>
+            Tel: <span class="text-slate-300 font-mono">+90 (262) 678 80 40</span>
           </p>
         </div>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Demo Contact Form -->
-  <section id="contact" class="max-w-4xl mx-auto px-6 py-20">
-    <div class="p-8 rounded-2xl border border-zinc-800 bg-zinc-900/40">
-      <div class="max-w-xl mb-6">
-        <h3 class="text-xl font-bold text-white">Schedule an Enterprise Merchant Demo</h3>
-        <p class="text-xs text-zinc-400 mt-1">Connect your marketplace stores to start resolving buyer disputes on autopilot.</p>
-      </div>
-
-      <form class="space-y-4 text-xs font-mono" onsubmit="event.preventDefault(); alert('Demo request received! Our sales engineering team will contact you within 24 hours.');">
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-zinc-400 mb-1">Company / Store Name</label>
-            <input type="text" placeholder="e.g. Acme Retail Brands" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-zinc-200 focus:outline-none focus:border-blue-500">
-          </div>
-          <div>
-            <label class="block text-zinc-400 mb-1">Work Email</label>
-            <input type="email" placeholder="operations@yourbrand.com" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-zinc-200 focus:outline-none focus:border-blue-500">
-          </div>
+        <!-- Verification & Registry -->
+        <div class="space-y-3">
+          <div class="text-xs font-bold text-white uppercase tracking-wider">Public Records</div>
+          <ul class="space-y-2">
+            <li>
+              <a href="https://www.crunchbase.com/organization/haytool-commerce" target="_blank" rel="noopener noreferrer" class="hover:text-brand-cyan transition-colors flex items-center gap-1.5">
+                <span>&rarr; Crunchbase Registry</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kenan-tas-279793442" target="_blank" rel="noopener noreferrer" class="hover:text-brand-cyan transition-colors flex items-center gap-1.5">
+                <span>&rarr; LinkedIn Founder Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#verification" class="hover:text-brand-cyan transition-colors flex items-center gap-1.5">
+                <span>&rarr; Official Corporate Details</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="grid sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-zinc-400 mb-1">Primary Channels</label>
-            <input type="text" placeholder="Trendyol, Amazon TR, Shopify" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-zinc-200 focus:outline-none focus:border-blue-500">
-          </div>
-          <div>
-            <label class="block text-zinc-400 mb-1">Estimated Monthly Tickets</label>
-            <input type="text" placeholder="1,000 - 15,000 / month" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg p-3 text-zinc-200 focus:outline-none focus:border-blue-500">
-          </div>
-        </div>
-        <button type="submit" class="w-full py-3.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-500 transition text-xs shadow-lg shadow-blue-600/20">
-          Request Pilot Access
-        </button>
-      </form>
-    </div>
-  </section>
 
-  <!-- Legal & Verification Footer -->
-  <footer class="border-t border-zinc-800/80 bg-zinc-950 py-12 text-xs text-zinc-500">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="flex items-center gap-3">
-        <span class="font-bold text-zinc-200 text-sm">Haytool Commerce</span>
-        <span>&bull;</span>
-        <span class="bg-zinc-900 border border-zinc-800 text-zinc-400 px-2.5 py-0.5 rounded font-mono text-[11px]">Founded in 2024</span>
-        <span>&bull;</span>
-        <span>Kocaeli, TR</span>
       </div>
-      <div class="text-center md:text-right font-mono text-[11px] space-y-1">
-        <p>&copy; 2024-2026 Haytool Yazılım Teknolojileri A.Ş. All rights reserved.</p>
-        <p class="text-zinc-400">
-          Executive: <a href="mailto:founders@haytool.online" class="text-blue-400 hover:underline">founders@haytool.online</a> &bull; 
-          Ops: <a href="mailto:support@haytool.online" class="text-zinc-300 hover:underline">support@haytool.online</a> &bull; 
-          Tel: +90 (262) 678 80 40
-        </p>
+
+      <!-- Copyright & Compliance Disclaimer -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-[11px] gap-4">
+        <div>
+          &copy; 2024–2026 Haytool Commerce. All rights reserved.
+        </div>
+        <div class="flex items-center space-x-6 font-medium">
+          <span>KVKK / GDPR Isolated</span>
+          <span>Zero PII Retention</span>
+          <span>Terms of Service</span>
+        </div>
       </div>
+
     </div>
   </footer>
+
+  <!-- Interactive Pilot Request Modal -->
+  <div id="pilot-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-brand-card border border-brand-border rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+      
+      <button onclick="closePilotModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-lg bg-slate-900 border border-slate-800" aria-label="Close modal">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <div class="mb-6">
+        <span class="text-xs font-mono text-brand-cyan uppercase tracking-wider">CONFIDENTIAL SANDBOX</span>
+        <h3 class="text-2xl font-bold text-white mt-1">Request Merchant Pilot</h3>
+        <p class="text-xs text-slate-400 mt-1">Experience Haytool on your store catalog under NDA.</p>
+      </div>
+
+      <form id="pilot-form" onsubmit="handlePilotSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-name">Your Full Name &amp; Title</label>
+          <input type="text" id="merchant-name" required placeholder="e.g. John Doe, Head of Operations" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-email">Work Email</label>
+          <input type="email" id="merchant-email" required placeholder="name@company.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-channels">Primary Marketplace Channels</label>
+          <select id="merchant-channels" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
+            <option value="Amazon + Trendyol">Amazon + Trendyol</option>
+            <option value="Trendyol + Hepsiburada">Trendyol + Hepsiburada</option>
+            <option value="Shopify Plus Omnichannel">Shopify Plus Omnichannel</option>
+            <option value="All 5 Channels">All 5 Marketplaces</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1" for="merchant-volume">Approximate Monthly Orders</label>
+          <select id="merchant-volume" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs focus:outline-none focus:border-brand-cyan transition-colors">
+            <option value="1,000 - 5,000 orders/mo">1,000 - 5,000 orders/mo</option>
+            <option value="5,000 - 20,000 orders/mo" selected>5,000 - 20,000 orders/mo</option>
+            <option value="20,000 - 100,000+ orders/mo">20,000 - 100,000+ orders/mo</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-extrabold text-sm transition-all shadow-glow-cyan mt-2">
+          Submit Pilot Request
+        </button>
+      </form>
+
+      <!-- Toast Feedback -->
+      <div id="modal-toast" class="hidden mt-4 p-3 rounded-xl bg-emerald-950/80 border border-emerald-800 text-emerald-300 text-xs text-center font-medium">
+        &check; Request received! Opening direct email draft with the Founder...
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Interactive Logic Script -->
+  <script>
+    // Tab Switcher
+    function switchTab(tabId) {
+      const tabs = ['dispute', 'inquiries', 'catalog', 'shield'];
+      tabs.forEach(t => {
+        const content = document.getElementById('tab-content-' + t);
+        const btn = document.getElementById('tab-btn-' + t);
+        if (t === tabId) {
+          content.classList.remove('hidden');
+          btn.className = 'px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-brand-cyan text-slate-950 shadow-glow-cyan';
+          btn.setAttribute('aria-selected', 'true');
+        } else {
+          content.classList.add('hidden');
+          btn.className = 'px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-400 hover:text-white';
+          btn.setAttribute('aria-selected', 'false');
+        }
+      });
+    }
+
+    // FAQ Accordion
+    function toggleFaq(index) {
+      const ans = document.getElementById('faq-ans-' + index);
+      const chevron = document.getElementById('faq-chevron-' + index);
+      if (ans.classList.contains('hidden')) {
+        ans.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+      } else {
+        ans.classList.add('hidden');
+        chevron.classList.remove('rotate-180');
+      }
+    }
+
+    // ROI Calculator Function
+    function calculateSavings(orders) {
+      const orderCount = parseInt(orders);
+      document.getElementById('order-count-display').innerText = Number(orderCount).toLocaleString();
+      
+      // Calculations:
+      // ~3% of orders have return disputes/inquiries
+      const disputes = Math.round(orderCount * 0.03);
+      // Each automated dispute & ticket saves ~25 minutes of clerical/support time
+      const hoursSaved = Math.round((disputes * 25) / 60);
+      // Financial savings: recovered disputes (~120 TL/claim) + support hours (~150 TL/hr)
+      const savings = Math.round((disputes * 120) + (hoursSaved * 160));
+
+      document.getElementById('stat-disputes').innerText = Number(disputes).toLocaleString();
+      document.getElementById('stat-hours').innerText = Number(hoursSaved).toLocaleString() + ' hrs';
+      document.getElementById('stat-savings').innerText = '₺ ' + Number(savings).toLocaleString();
+    }
+
+    // Pilot Modal Functions
+    function openPilotModal() {
+      document.getElementById('pilot-modal').classList.remove('hidden');
+    }
+
+    function closePilotModal() {
+      document.getElementById('pilot-modal').classList.add('hidden');
+      document.getElementById('modal-toast').classList.add('hidden');
+    }
+
+    function handlePilotSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('merchant-name').value;
+      const email = document.getElementById('merchant-email').value;
+      const channels = document.getElementById('merchant-channels').value;
+      const volume = document.getElementById('merchant-volume').value;
+      
+      const toast = document.getElementById('modal-toast');
+      toast.classList.remove('hidden');
+
+      // Draft mailto link
+      const subject = encodeURIComponent('Pilot Request: ' + name);
+      const body = encodeURIComponent(
+        'Hello Kenan,\n\nI would like to request sandbox pilot access for Haytool Commerce.\n\n' +
+        'Name: ' + name + '\n' +
+        'Email: ' + email + '\n' +
+        'Channels: ' + channels + '\n' +
+        'Monthly Volume: ' + volume + '\n\n' +
+        'Best regards,'
+      );
+
+      setTimeout(() => {
+        window.location.href = 'mailto:kenan.tas@haytool.online?subject=' + subject + '&body=' + body;
+      }, 1000);
+    }
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close modal on outside click
+    document.getElementById('pilot-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'pilot-modal') {
+        closePilotModal();
+      }
+    });
+  </script>
 
 </body>
 </html>
